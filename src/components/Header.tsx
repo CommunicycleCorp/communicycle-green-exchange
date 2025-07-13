@@ -39,11 +39,11 @@ export function Header() {
               <span>laith@communicycle.ca</span>
             </div>
           </div>
-          <Button variant="outline" size="sm" className="hidden sm:inline-flex">
-            Business Solutions
+          <Button variant="hero" size="sm" className="hidden sm:inline-flex">
+            Get Asset Valuation
           </Button>
-          <Button variant="hero" size="sm">
-            Residential Services
+          <Button variant="eco" size="sm">
+            Find Drop-off Location
           </Button>
         </div>
       </div>
