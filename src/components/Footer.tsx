@@ -1,0 +1,92 @@
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { Phone, Mail, MapPin, Clock, Recycle } from "lucide-react";
+
+export function Footer() {
+  return (
+    <footer id="contact" className="bg-foreground text-background">
+      <div className="container mx-auto px-6 py-16">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+          {/* Company Info */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-3">
+              <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
+                <Recycle className="h-6 w-6 text-primary-foreground" />
+              </div>
+              <div className="text-xl font-bold">Communicycle</div>
+            </div>
+            <p className="text-background/80 text-sm leading-relaxed">
+              Professional electronics resale and recycling services with secure data protection. 
+              Turning your old electronics into cash while protecting the environment.
+            </p>
+          </div>
+
+          {/* Services */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Services</h3>
+            <ul className="space-y-2 text-sm text-background/80">
+              <li>Electronics Resale</li>
+              <li>Secure Data Destruction</li>
+              <li>Business Electronics Disposal</li>
+              <li>Residential Recycling</li>
+              <li>Bulk Device Processing</li>
+              <li>Public Drop-off Locations</li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Contact Us</h3>
+            <div className="space-y-3 text-sm text-background/80">
+              <div className="flex items-center space-x-2">
+                <Phone className="h-4 w-4" />
+                <span>(555) 123-4567</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="h-4 w-4" />
+                <span>info@communicycle.com</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin className="h-4 w-4" />
+                <span>123 Green Tech Blvd, Eco City, EC 12345</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="h-4 w-4" />
+                <span>Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</span>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Get Started Today</h3>
+            <p className="text-sm text-background/80">
+              Ready to turn your electronics into cash or recycle responsibly?
+            </p>
+            <div className="space-y-3">
+              <Button variant="secondary" className="w-full">
+                Get Free Quote
+              </Button>
+              <Button variant="outline" className="w-full bg-transparent border-background/20 text-background hover:bg-background/10">
+                Schedule Pickup
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        <Separator className="my-8 bg-background/20" />
+
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="text-sm text-background/60">
+            © 2024 Communicycle Incorporated. All rights reserved.
+          </div>
+          <div className="flex space-x-6 text-sm text-background/60">
+            <a href="#" className="hover:text-background transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-background transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-background transition-colors">Environmental Impact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
