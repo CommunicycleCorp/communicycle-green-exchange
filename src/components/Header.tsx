@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function Header() {
+  const navigate = useNavigate();
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
@@ -42,7 +45,7 @@ export function Header() {
           <Button variant="hero" size="sm" className="hidden sm:inline-flex">
             Get Asset Valuation
           </Button>
-          <Button variant="eco" size="sm">
+          <Button variant="eco" size="sm" onClick={() => navigate('/dropoff-locations')}>
             Find Drop-off Location
           </Button>
         </div>

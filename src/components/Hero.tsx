@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { DollarSign, Shield, Recycle, Users, MapPin, Award, Leaf } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function Hero() {
+  const navigate = useNavigate();
+
   return (
     <section className="relative min-h-[80vh] bg-gradient-hero flex items-center">
       <div className="container mx-auto px-6 py-20">
@@ -31,7 +34,7 @@ export function Hero() {
                 <DollarSign className="mr-2 h-5 w-5" />
                 ITAD Asset Recovery
               </Button>
-              <Button variant="eco" size="xl" className="flex-1 sm:flex-none">
+              <Button variant="eco" size="xl" className="flex-1 sm:flex-none" onClick={() => navigate('/dropoff-locations')}>
                 <Recycle className="mr-2 h-5 w-5" />
                 Find Drop-off Location
               </Button>
