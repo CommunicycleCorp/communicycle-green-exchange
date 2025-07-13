@@ -48,7 +48,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>123 Green Tech Blvd, Eco City, EC 12345</span>
+                <span>Oakville, ON</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="h-4 w-4" />
