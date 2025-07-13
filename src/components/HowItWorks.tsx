@@ -7,7 +7,7 @@ export function HowItWorks() {
     {
       icon: Phone,
       title: "Assessment Request",
-      description: "Submit inventory list or schedule on-site evaluation for business or residential equipment"
+      description: "Fill our form to determine best process & evaluation"
     },
     {
       icon: Search,
@@ -84,6 +84,11 @@ export function HowItWorks() {
                       <p className="text-sm text-muted-foreground">
                         {step.description}
                       </p>
+                      {step.title === "Assessment Request" && (
+                        <Button variant="outline" size="sm" className="mt-3">
+                          Fill Our Form
+                        </Button>
+                      )}
                     </div>
                   </Card>
                   
