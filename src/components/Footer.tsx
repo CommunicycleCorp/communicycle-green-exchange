@@ -50,10 +50,6 @@ export function Footer() {
                 <MapPin className="h-4 w-4" />
                 <span>Oakville, ON</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4" />
-                <span>Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</span>
-              </div>
             </div>
           </div>
 
