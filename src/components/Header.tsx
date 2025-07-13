@@ -18,10 +18,13 @@ export function Header() {
         
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#services" className="text-foreground/80 hover:text-foreground transition-colors">
-            Services
+            Asset Recovery
+          </a>
+          <a href="#services" className="text-foreground/80 hover:text-foreground transition-colors">
+            Drop-off Network
           </a>
           <a href="#how-it-works" className="text-foreground/80 hover:text-foreground transition-colors">
-            How It Works
+            Process
           </a>
           <a href="#contact" className="text-foreground/80 hover:text-foreground transition-colors">
             Contact
@@ -39,8 +42,11 @@ export function Header() {
               <span>info@communicycle.com</span>
             </div>
           </div>
+          <Button variant="outline" size="sm" className="hidden sm:inline-flex">
+            Business Solutions
+          </Button>
           <Button variant="hero" size="sm">
-            Get Quote
+            Residential Services
           </Button>
         </div>
       </div>

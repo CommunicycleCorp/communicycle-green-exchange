@@ -11,24 +11,23 @@ export function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Turn Your Old Electronics
-                <span className="block text-primary">Into Cash</span>
+                Complete Electronic
+                <span className="block text-primary">Lifecycle Management</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Free professional electronic resale services for businesses and residential customers. 
-                We handle TVs, laptops, desktops, phones and more, plus electronics recycling with 
-                secure data protection.
+                <strong>ITAD Asset Recovery:</strong> Professional refurbishment and resale of working IT equipment for maximum value recovery.<br/>
+                <strong>End-of-Life Recycling:</strong> Public drop-off network ensuring zero electronic waste reaches landfills.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" className="flex-1 sm:flex-none">
                 <DollarSign className="mr-2 h-5 w-5" />
-                Get Cash Quote
+                ITAD Asset Recovery
               </Button>
               <Button variant="eco" size="xl" className="flex-1 sm:flex-none">
                 <Recycle className="mr-2 h-5 w-5" />
-                Recycle Electronics
+                Find Drop-off Location
               </Button>
             </div>
 

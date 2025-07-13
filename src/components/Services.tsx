@@ -1,37 +1,30 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { DollarSign, Recycle, Building, Users, Laptop, Smartphone, Monitor, Gamepad2 } from "lucide-react";
+import { DollarSign, Recycle, Building, Users, Laptop, Smartphone, Monitor, Gamepad2, ArrowRight, Shield, RotateCcw } from "lucide-react";
 
 export function Services() {
-  const services = [
+  const mainServices = [
     {
       icon: DollarSign,
-      title: "Electronic Resale",
-      description: "Get cash for your working electronics. We evaluate, refurbish, and resell your devices at maximum value.",
-      features: ["Free evaluation", "Competitive pricing", "Quick payment", "Professional handling"],
-      cta: "Get Cash Quote"
+      title: "ITAD Asset Recovery",
+      subtitle: "IT Asset Disposition & Refurbishment",
+      description: "Professional refurbishment and resale of working IT equipment. Maximize value recovery from functional electronics through certified refurbishment processes.",
+      businessFeatures: ["Corporate equipment liquidation", "Data center decommissioning", "Office technology upgrades", "Fleet device management"],
+      residentialFeatures: ["Individual device evaluation", "Home office equipment", "Consumer electronics", "Gaming systems"],
+      cta: "Get Asset Valuation",
+      borderColor: "border-primary",
+      bgColor: "bg-primary/10"
     },
     {
       icon: Recycle,
-      title: "Electronics Recycling",
-      description: "Responsible recycling for all electronic devices with certified data destruction and zero landfill policy.",
-      features: ["Secure data destruction", "Environmental compliance", "Certificate of recycling", "Public drop-off locations"],
-      cta: "Schedule Pickup"
-    }
-  ];
-
-  const customers = [
-    {
-      icon: Building,
-      title: "Business Services",
-      description: "Corporate electronics disposal and resale services for offices, schools, and organizations.",
-      items: ["Bulk device processing", "Data security compliance", "Asset recovery", "Scheduled pickups"]
-    },
-    {
-      icon: Users,
-      title: "Residential Services",
-      description: "Individual and family electronics recycling and resale with convenient drop-off locations.",
-      items: ["Home pickup available", "Individual device quotes", "Family-friendly locations", "Educational resources"]
+      title: "End-of-Life Recycling",
+      subtitle: "Public Drop-off Network Operations",
+      description: "The first electronic recycling system operated by public drop-off operators to divert every electronic device from landfills with zero-waste guarantee.",
+      businessFeatures: ["Convenient neighborhood locations", "No appointment necessary", "All electronics accepted", "Certified destruction processes"],
+      residentialFeatures: ["100% landfill diversion", "Responsible material recovery", "Certified data destruction", "Environmental compliance"],
+      cta: "Find Drop-off Location",
+      borderColor: "border-secondary",
+      bgColor: "bg-secondary/10"
     }
   ];
 
@@ -43,74 +36,66 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-20 bg-gradient-to-b from-background to-accent/5">
       <div className="container mx-auto px-6">
         {/* Services Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl font-bold text-foreground">Our Services</h2>
+          <h2 className="text-4xl font-bold text-foreground">Two Specialized Solutions</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            The first electronic recycling system operated by public dropoff operators to divert every electronic from landfill
+            Comprehensive electronic lifecycle management from working equipment resale to end-of-life recycling
           </p>
         </div>
 
-        {/* Main Services */}
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
-          {services.map((service, index) => (
-            <Card key={index} className="bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 border-0">
-              <CardHeader className="pb-4">
-                <div className="h-14 w-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                  <service.icon className="h-7 w-7 text-primary" />
+        {/* Main Service Divisions */}
+        <div className="grid lg:grid-cols-2 gap-12 mb-20">
+          {mainServices.map((service, index) => (
+            <Card key={index} className={`p-10 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 border-l-4 ${service.borderColor}`}>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <div className={`h-16 w-16 ${service.bgColor} rounded-lg flex items-center justify-center`}>
+                    <service.icon className={`h-8 w-8 ${index === 0 ? 'text-primary' : 'text-secondary'}`} />
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold text-foreground">{service.title}</h3>
+                    <p className={`${index === 0 ? 'text-primary' : 'text-secondary'} font-medium`}>{service.subtitle}</p>
+                  </div>
                 </div>
-                <CardTitle className="text-2xl text-foreground">{service.title}</CardTitle>
-                <CardDescription className="text-muted-foreground text-base">
+
+                <p className="text-muted-foreground text-lg">
                   {service.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <ul className="space-y-2">
-                  {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-center space-x-2 text-sm text-muted-foreground">
-                      <div className="h-1.5 w-1.5 bg-primary rounded-full"></div>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button variant="hero" className="w-full">
+                </p>
+
+                <div className="space-y-4">
+                  <h4 className="font-semibold text-foreground flex items-center">
+                    <Building className="h-5 w-5 text-primary mr-2" />
+                    Business Solutions
+                  </h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground ml-7">
+                    {service.businessFeatures.map((feature, i) => (
+                      <li key={i}>• {feature}</li>
+                    ))}
+                  </ul>
+
+                  <h4 className="font-semibold text-foreground flex items-center">
+                    <Users className="h-5 w-5 text-primary mr-2" />
+                    Residential Services
+                  </h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground ml-7">
+                    {service.residentialFeatures.map((feature, i) => (
+                      <li key={i}>• {feature}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <Button variant={index === 0 ? "hero" : "eco"} className="w-full group">
                   {service.cta}
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </CardContent>
+              </div>
             </Card>
           ))}
         </div>
 
-        {/* Customer Types */}
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
-          {customers.map((customer, index) => (
-            <Card key={index} className="bg-secondary/50 border border-primary/10 hover:border-primary/20 transition-all duration-300">
-              <CardHeader>
-                <div className="flex items-center space-x-3">
-                  <div className="h-10 w-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <customer.icon className="h-5 w-5 text-primary" />
-                  </div>
-                  <CardTitle className="text-xl text-foreground">{customer.title}</CardTitle>
-                </div>
-                <CardDescription className="text-muted-foreground">
-                  {customer.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <ul className="grid grid-cols-2 gap-2">
-                  {customer.items.map((item, i) => (
-                    <li key={i} className="flex items-center space-x-2 text-sm text-muted-foreground">
-                      <div className="h-1.5 w-1.5 bg-primary rounded-full"></div>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
 
         {/* Accepted Devices */}
         <div className="bg-accent/30 rounded-2xl p-8">
