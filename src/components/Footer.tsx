@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Phone, Mail, MapPin, Clock, Recycle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Recycle, DollarSign } from "lucide-react";
 
 export function Footer() {
   return (
@@ -65,10 +65,12 @@ export function Footer() {
             </p>
             <div className="space-y-3">
               <Button variant="secondary" className="w-full">
-                Get Free Quote
+                <DollarSign className="mr-2 h-4 w-4" />
+                ITAD Asset Recovery
               </Button>
               <Button variant="outline" className="w-full bg-transparent border-background/20 text-background hover:bg-background/10">
-                Schedule Pickup
+                <Recycle className="mr-2 h-4 w-4" />
+                Find Drop-off Location
               </Button>
             </div>
           </div>
