@@ -16,7 +16,7 @@ export function Hero() {
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 <strong>ITAD Asset Recovery:</strong> Professional refurbishment and resale of working IT equipment for maximum value recovery.<br/>
-                <strong>End-of-Life Recycling:</strong> Public drop-off network ensuring zero electronic waste reaches landfills.
+                <strong>End-of-Life Recycling:</strong> Public drop-off End-of-Life electronic recycling network ensuring zero electronic waste reaches landfills.
               </p>
             </div>
 
