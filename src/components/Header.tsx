@@ -18,10 +18,7 @@ export function Header() {
         
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#services" className="text-foreground/80 hover:text-foreground transition-colors">
-            Asset Recovery
-          </a>
-          <a href="#services" className="text-foreground/80 hover:text-foreground transition-colors">
-            Drop-off Network
+            Solutions
           </a>
           <a href="#how-it-works" className="text-foreground/80 hover:text-foreground transition-colors">
             Process
