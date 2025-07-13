@@ -54,11 +54,11 @@ export function Hero() {
             <Card className="p-6 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
               <div className="space-y-3">
                 <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <DollarSign className="h-6 w-6 text-primary" />
+                  <Award className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">$2M+</h3>
-                  <p className="text-sm text-muted-foreground">Paid to Customers</p>
+                  <h3 className="text-2xl font-bold text-foreground">Sustainable.</h3>
+                  <p className="text-sm text-muted-foreground">Transparent. Rewarding.</p>
                 </div>
               </div>
             </Card>
@@ -90,11 +90,11 @@ export function Hero() {
             <Card className="p-6 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
               <div className="space-y-3">
                 <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Award className="h-6 w-6 text-primary" />
+                  <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">Award</h3>
-                  <p className="text-sm text-muted-foreground">Winning Service</p>
+                  <h3 className="text-2xl font-bold text-foreground">100%</h3>
+                  <p className="text-sm text-muted-foreground">Data Security</p>
                 </div>
               </div>
             </Card>
