@@ -40,11 +40,11 @@ export function Footer() {
             <div className="space-y-3 text-sm text-background/80">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>(365) 777-3058</span>
+                <span>(555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>laith@communicycle.ca</span>
+                <span>info@communicycle.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
