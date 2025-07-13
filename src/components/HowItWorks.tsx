@@ -7,7 +7,7 @@ export function HowItWorks() {
     {
       icon: FileText,
       title: "ITAD Intake Form",
-      description: "Fill our form to determine best process & evaluation"
+      description: "Fill our form so we can ensure the best process and evaluation for your device to maximize value."
     },
     {
       icon: Mail,
