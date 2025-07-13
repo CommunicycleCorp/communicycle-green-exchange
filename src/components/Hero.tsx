@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { DollarSign, Shield, Recycle, Users } from "lucide-react";
+import { DollarSign, Shield, Recycle, Users, MapPin, Award } from "lucide-react";
 
 export function Hero() {
   return (
@@ -54,11 +54,11 @@ export function Hero() {
             <Card className="p-6 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
               <div className="space-y-3">
                 <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <DollarSign className="h-6 w-6 text-primary" />
+                  <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">$2M+</h3>
-                  <p className="text-sm text-muted-foreground">Paid to Customers</p>
+                  <h3 className="text-2xl font-bold text-foreground">100%</h3>
+                  <p className="text-sm text-muted-foreground">Canadian Owned & Operated</p>
                 </div>
               </div>
             </Card>
@@ -69,8 +69,8 @@ export function Hero() {
                   <Recycle className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">50k+</h3>
-                  <p className="text-sm text-muted-foreground">Devices Recycled</p>
+                  <h3 className="text-2xl font-bold text-foreground">100%</h3>
+                  <p className="text-sm text-muted-foreground">Ethically Recycled</p>
                 </div>
               </div>
             </Card>
@@ -90,11 +90,11 @@ export function Hero() {
             <Card className="p-6 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
               <div className="space-y-3">
                 <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Users className="h-6 w-6 text-primary" />
+                  <Award className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">1000+</h3>
-                  <p className="text-sm text-muted-foreground">Happy Clients</p>
+                  <h3 className="text-2xl font-bold text-foreground">Award</h3>
+                  <p className="text-sm text-muted-foreground">Winning Service</p>
                 </div>
               </div>
             </Card>
