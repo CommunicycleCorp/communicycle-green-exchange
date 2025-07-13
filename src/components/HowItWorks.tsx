@@ -45,7 +45,7 @@ export function HowItWorks() {
     {
       icon: CheckCircle,
       title: "Certification",
-      description: "Environmental compliance documentation and recycling certificates provided"
+      description: "Environmental compliance documentation and recycling certificates provided on request"
     }
   ];
 
