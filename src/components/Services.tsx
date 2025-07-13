@@ -53,11 +53,11 @@ export function Services() {
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className={`h-16 w-16 ${service.bgColor} rounded-lg flex items-center justify-center`}>
-                    <service.icon className={`h-8 w-8 ${index === 0 ? 'text-primary' : 'text-secondary'}`} />
+                    <service.icon className="h-8 w-8 text-primary" />
                   </div>
                   <div>
                     <h3 className="text-3xl font-bold text-foreground">{service.title}</h3>
-                    <p className={`${index === 0 ? 'text-primary' : 'text-secondary'} font-medium`}>{service.subtitle}</p>
+                    <p className="text-primary font-medium">{service.subtitle}</p>
                   </div>
                 </div>
 
