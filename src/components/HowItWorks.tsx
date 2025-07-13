@@ -114,11 +114,11 @@ export function HowItWorks() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {recyclingSteps.map((step, index) => (
                 <div key={index} className="relative">
-                  <Card className="p-6 text-center bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 h-full border-l-4 border-secondary">
-                    <div className="h-16 w-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
-                      <step.icon className="h-8 w-8 text-secondary" />
+                  <Card className="p-6 text-center bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 h-full border-l-4 border-primary">
+                    <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                      <step.icon className="h-8 w-8 text-primary" />
                     </div>
-                    <div className="absolute -top-3 -left-3 h-8 w-8 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                    <div className="absolute -top-3 -left-3 h-8 w-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
                       {index + 1}
                     </div>
                     <div className="space-y-3">
@@ -133,7 +133,7 @@ export function HowItWorks() {
                   
                   {index < recyclingSteps.length - 1 && (
                     <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                      <ArrowRight className="h-6 w-6 text-secondary" />
+                      <ArrowRight className="h-6 w-6 text-primary" />
                     </div>
                   )}
                 </div>
