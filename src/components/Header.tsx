@@ -32,11 +32,11 @@ export function Header() {
           <div className="hidden lg:flex items-center space-x-4 text-sm text-muted-foreground">
             <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
-              <span>(555) 123-4567</span>
+              <span>(365) 777-3058</span>
             </div>
             <div className="flex items-center space-x-1">
               <Mail className="h-4 w-4" />
-              <span>info@communicycle.com</span>
+              <span>laith@communicycle.ca</span>
             </div>
           </div>
           <Button variant="outline" size="sm" className="hidden sm:inline-flex">
