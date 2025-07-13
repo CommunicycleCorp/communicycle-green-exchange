@@ -22,7 +22,12 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" className="flex-1 sm:flex-none">
+              <Button 
+                variant="hero" 
+                size="xl" 
+                className="flex-1 sm:flex-none"
+                onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
+              >
                 <DollarSign className="mr-2 h-5 w-5" />
                 ITAD Asset Recovery
               </Button>

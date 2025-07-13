@@ -87,7 +87,11 @@ export function Services() {
                   </ul>
                 </div>
 
-                <Button variant={index === 0 ? "hero" : "eco"} className="w-full group">
+                <Button 
+                  variant={index === 0 ? "hero" : "eco"} 
+                  className="w-full group"
+                  onClick={() => index === 0 ? window.open('https://tally.so/r/w40aVO', '_blank') : null}
+                >
                   {service.cta}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>

@@ -85,7 +85,12 @@ export function HowItWorks() {
                         {step.description}
                       </p>
                       {step.title === "ITAD Intake Form" && (
-                        <Button variant="outline" size="sm" className="mt-3">
+                        <Button 
+                          variant="outline" 
+                          size="sm" 
+                          className="mt-3"
+                          onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
+                        >
                           Fill Our Form
                         </Button>
                       )}
@@ -165,7 +170,11 @@ export function HowItWorks() {
               Whether you need asset recovery or end-of-life recycling, we have the expertise and infrastructure to handle your electronics responsibly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg">
+              <Button 
+                variant="hero" 
+                size="lg"
+                onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
+              >
                 <DollarSign className="mr-2 h-5 w-5" />
                 Get Asset Valuation
               </Button>

@@ -64,7 +64,11 @@ export function Footer() {
               Ready to turn your electronics into cash or recycle responsibly?
             </p>
             <div className="space-y-3">
-              <Button variant="secondary" className="w-full">
+              <Button 
+                variant="secondary" 
+                className="w-full"
+                onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
+              >
                 <DollarSign className="mr-2 h-4 w-4" />
                 ITAD Asset Recovery
               </Button>
