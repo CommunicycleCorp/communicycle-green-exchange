@@ -147,19 +147,15 @@ export function HowItWorks() {
           <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground mb-12">
             <div className="flex items-center space-x-2">
               <CheckCircle className="h-5 w-5 text-primary" />
-              <span>R2 Certified Facility</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>NIST Data Destruction</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>EPA Compliant</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
               <span>Zero Landfill Guarantee</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span>Committed to Secure & Responsible Recycling</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span>Safeguarding Data, Supporting Sustainability</span>
             </div>
           </div>
 
