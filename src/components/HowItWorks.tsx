@@ -1,18 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Package, Search, DollarSign, Recycle, ArrowRight, Shield, RotateCcw, Phone, Truck, CheckCircle } from "lucide-react";
+import { Package, Search, DollarSign, Recycle, ArrowRight, Shield, RotateCcw, Phone, Truck, CheckCircle, FileText, Mail } from "lucide-react";
 
 export function HowItWorks() {
   const itadSteps = [
     {
-      icon: Phone,
-      title: "Assessment Request",
+      icon: FileText,
+      title: "ITAD Intake Form",
       description: "Fill our form to determine best process & evaluation"
     },
     {
-      icon: Search,
-      title: "Device Testing",
-      description: "Professional testing and valuation of working equipment to determine maximum resale value"
+      icon: Mail,
+      title: "Pickup or Mail Service",
+      description: "Convenient pickup scheduling or secure shipping labels for your equipment delivery"
     },
     {
       icon: RotateCcw,
@@ -84,7 +84,7 @@ export function HowItWorks() {
                       <p className="text-sm text-muted-foreground">
                         {step.description}
                       </p>
-                      {step.title === "Assessment Request" && (
+                      {step.title === "ITAD Intake Form" && (
                         <Button variant="outline" size="sm" className="mt-3">
                           Fill Our Form
                         </Button>
