@@ -159,24 +159,24 @@ export default function DropoffLocations() {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {/* Hero Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="text-2xl sm:text-4xl font-bold text-foreground mb-4">
             Electronic Waste Drop-off Locations
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
             Find convenient locations near you to safely dispose of your electronic devices. 
             All locations follow certified e-waste recycling protocols.
           </p>
           
           {/* Search Bar */}
-          <div className="flex gap-4 max-w-md mx-auto mb-8">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto mb-6 sm:mb-8">
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
               <Input 
-                placeholder="Enter your postal code or address"
-                className="pl-10"
+                placeholder="Enter postal code or address"
+                className="pl-10 w-full"
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && searchByAddress()}
@@ -185,23 +185,24 @@ export default function DropoffLocations() {
             <Button 
               variant="hero" 
               size="default" 
-              className="flex items-center gap-2"
+              className="flex items-center justify-center gap-2 w-full sm:w-auto"
               onClick={searchByAddress}
             >
               <Navigation className="h-4 w-4" />
-              Find Nearby
+              <span className="sm:hidden">Find</span>
+              <span className="hidden sm:inline">Find Nearby</span>
             </Button>
           </div>
         </div>
 
         {/* Embedded Google My Maps */}
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto mb-12 sm:mb-16">
           <div className="w-full rounded-lg overflow-hidden shadow-lg">
             <iframe 
               src="https://www.google.com/maps/d/embed?mid=19VkdGhFA0Z9kZwx34QwfSARDNiug7sE&ehbc=2E312F" 
               width="100%" 
-              height="500"
-              className="border-0"
+              height="350"
+              className="border-0 sm:h-[500px]"
               loading="lazy"
               title="Electronic Waste Drop-off Locations"
             />
@@ -209,18 +210,18 @@ export default function DropoffLocations() {
         </div>
 
         {/* Additional Info Section */}
-        <div className="mt-16 text-center">
+        <div className="mt-12 sm:mt-16 text-center">
           <Card className="max-w-4xl mx-auto">
-            <CardHeader>
-              <CardTitle>Before You Visit</CardTitle>
-              <CardDescription>
+            <CardHeader className="pb-4 sm:pb-6">
+              <CardTitle className="text-xl sm:text-2xl">Before You Visit</CardTitle>
+              <CardDescription className="text-sm sm:text-base">
                 Important information to ensure a smooth drop-off experience
               </CardDescription>
             </CardHeader>
-            <CardContent className="grid md:grid-cols-2 gap-6 text-left">
+            <CardContent className="grid sm:grid-cols-2 gap-4 sm:gap-6 text-left p-4 sm:p-6 pt-0">
               <div>
-                <h4 className="font-medium mb-3">What to Bring:</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <h4 className="font-medium mb-3 text-sm sm:text-base">What to Bring:</h4>
+                <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground">
                   <li>• Valid government-issued ID</li>
                   <li>• Proof of ownership for valuable items</li>
                   <li>• Remove all personal data beforehand</li>
@@ -228,8 +229,8 @@ export default function DropoffLocations() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium mb-3">What We Accept:</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <h4 className="font-medium mb-3 text-sm sm:text-base">What We Accept:</h4>
+                <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground">
                   <li>• Computers, laptops, and tablets</li>
                   <li>• Smartphones and mobile devices</li>
                   <li>• Monitors and TVs</li>
@@ -242,16 +243,16 @@ export default function DropoffLocations() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-12">
-          <h3 className="text-2xl font-bold mb-4">Need Help Finding the Right Location?</h3>
-          <p className="text-muted-foreground mb-6">
+        <div className="text-center mt-8 sm:mt-12">
+          <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Need Help Finding the Right Location?</h3>
+          <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 px-4">
             Contact our team for personalized assistance with your e-waste disposal needs.
           </p>
-          <div className="flex gap-4 justify-center">
-            <Button variant="hero" size="lg">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-sm sm:max-w-none mx-auto">
+            <Button variant="hero" size="lg" className="w-full sm:w-auto">
               Contact Support
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="w-full sm:w-auto">
               Schedule Pickup
             </Button>
           </div>
