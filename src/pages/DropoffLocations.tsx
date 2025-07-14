@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, Phone, Search, Navigation } from "lucide-react";
-import { GoogleMap } from "@/components/GoogleMap";
 
 export default function DropoffLocations() {
   const locations = [
@@ -82,9 +81,18 @@ export default function DropoffLocations() {
           </div>
         </div>
 
-        {/* Interactive Map */}
+        {/* Embedded Google My Maps */}
         <div className="max-w-6xl mx-auto">
-          <GoogleMap locations={locations} />
+          <div className="w-full rounded-lg overflow-hidden shadow-lg">
+            <iframe 
+              src="https://www.google.com/maps/d/embed?mid=19VkdGhFA0Z9kZwx34QwfSARDNiug7sE&ehbc=2E312F" 
+              width="100%" 
+              height="500"
+              className="border-0"
+              loading="lazy"
+              title="Electronic Waste Drop-off Locations"
+            />
+          </div>
         </div>
 
         {/* Additional Info Section */}
