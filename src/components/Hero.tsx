@@ -65,7 +65,7 @@ export function Hero() {
                   <Leaf className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">Sustainable.</h3>
+                  <h3 className="text-lg sm:text-2xl font-bold text-foreground">Sustainable.</h3>
                   <p className="text-sm text-muted-foreground">Transparent. Rewarding.</p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export function Hero() {
                   <Recycle className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">100%</h3>
+                  <h3 className="text-lg sm:text-2xl font-bold text-foreground">100%</h3>
                   <p className="text-sm text-muted-foreground">Ethically Recycled</p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export function Hero() {
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">100%</h3>
+                  <h3 className="text-lg sm:text-2xl font-bold text-foreground">100%</h3>
                   <p className="text-sm text-muted-foreground">Canadian Owned & Recycled</p>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export function Hero() {
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">100%</h3>
+                  <h3 className="text-lg sm:text-2xl font-bold text-foreground">100%</h3>
                   <p className="text-sm text-muted-foreground">Data Security</p>
                 </div>
               </div>
