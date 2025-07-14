@@ -5,8 +5,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, Phone, Search, Navigation } from "lucide-react";
+import { Toaster } from "@/components/ui/toaster";
+
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 export default function DropoffLocations() {
+  const [searchInput, setSearchInput] = useState("");
+  const [userLocation, setUserLocation] = useState<{lat: number, lng: number} | null>(null);
+  const [sortedLocations, setSortedLocations] = useState<any[]>([]);
+  const { toast } = useToast();
   const locations = [
     {
       id: 1,
@@ -16,7 +24,9 @@ export default function DropoffLocations() {
       hours: "Mon-Fri: 8AM-6PM, Sat: 9AM-4PM",
       acceptedItems: ["Laptops", "Smartphones", "Tablets", "Desktop Computers", "Monitors"],
       distance: "2.1 km",
-      type: "Primary Location"
+      type: "Primary Location",
+      lat: 43.4675,
+      lng: -79.6877
     },
     {
       id: 2,
@@ -26,7 +36,9 @@ export default function DropoffLocations() {
       hours: "Mon-Sat: 9AM-5PM",
       acceptedItems: ["All Electronics", "Batteries", "Cables", "Printers"],
       distance: "8.5 km",
-      type: "Partner Location"
+      type: "Partner Location",
+      lat: 43.3255,
+      lng: -79.7990
     },
     {
       id: 3,
@@ -36,7 +48,9 @@ export default function DropoffLocations() {
       hours: "Tue-Sat: 10AM-6PM",
       acceptedItems: ["Consumer Electronics", "Small Appliances", "Gaming Consoles"],
       distance: "12.3 km", 
-      type: "Partner Location"
+      type: "Partner Location",
+      lat: 43.5183,
+      lng: -79.8774
     },
     {
       id: 4,
@@ -46,9 +60,100 @@ export default function DropoffLocations() {
       hours: "Mon-Fri: 7AM-7PM, Sat-Sun: 9AM-5PM",
       acceptedItems: ["All Electronics", "Data Destruction", "Bulk Commercial"],
       distance: "15.7 km",
-      type: "Certified Partner"
+      type: "Certified Partner",
+      lat: 43.5890,
+      lng: -79.6441
     }
   ];
+
+  // Calculate distance between two coordinates using Haversine formula
+  const calculateDistance = (lat1: number, lng1: number, lat2: number, lng2: number) => {
+    const R = 6371; // Earth's radius in kilometers
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLng = (lng2 - lng1) * Math.PI / 180;
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLng/2) * Math.sin(dLng/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c;
+  };
+
+  // Get user's current location
+  const getCurrentLocation = () => {
+    if (!navigator.geolocation) {
+      toast({
+        title: "Geolocation not supported",
+        description: "Your browser doesn't support geolocation.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        setUserLocation({ lat: latitude, lng: longitude });
+        
+        // Calculate distances and sort locations
+        const locationsWithDistance = locations.map(location => {
+          const distance = calculateDistance(latitude, longitude, location.lat, location.lng);
+          return {
+            ...location,
+            calculatedDistance: distance,
+            distance: `${distance.toFixed(1)} km`
+          };
+        }).sort((a, b) => a.calculatedDistance - b.calculatedDistance);
+        
+        setSortedLocations(locationsWithDistance);
+        
+        toast({
+          title: "Location found!",
+          description: `Found ${locationsWithDistance.length} locations near you. Closest is ${locationsWithDistance[0].name} (${locationsWithDistance[0].distance}).`,
+        });
+      },
+      (error) => {
+        let errorMessage = "Unable to get your location.";
+        switch(error.code) {
+          case error.PERMISSION_DENIED:
+            errorMessage = "Location access denied. Please enable location permissions.";
+            break;
+          case error.POSITION_UNAVAILABLE:
+            errorMessage = "Location information unavailable.";
+            break;
+          case error.TIMEOUT:
+            errorMessage = "Location request timed out.";
+            break;
+        }
+        toast({
+          title: "Location error",
+          description: errorMessage,
+          variant: "destructive",
+        });
+      }
+    );
+  };
+
+  // Search by postal code or address (simplified version)
+  const searchByAddress = async () => {
+    if (!searchInput.trim()) {
+      getCurrentLocation();
+      return;
+    }
+
+    toast({
+      title: "Searching...",
+      description: "Looking for locations near your address.",
+    });
+
+    // In a real app, you'd use a geocoding service here
+    // For now, we'll simulate a search
+    setTimeout(() => {
+      toast({
+        title: "Search completed",
+        description: "Showing all available locations. Use 'Find Nearby' with location access for precise results.",
+      });
+    }, 1000);
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -72,9 +177,17 @@ export default function DropoffLocations() {
               <Input 
                 placeholder="Enter your postal code or address"
                 className="pl-10"
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && searchByAddress()}
               />
             </div>
-            <Button variant="hero" size="default" className="flex items-center gap-2">
+            <Button 
+              variant="hero" 
+              size="default" 
+              className="flex items-center gap-2"
+              onClick={searchByAddress}
+            >
               <Navigation className="h-4 w-4" />
               Find Nearby
             </Button>
@@ -146,6 +259,7 @@ export default function DropoffLocations() {
       </main>
       
       <Footer />
+      <Toaster />
     </div>
   );
 }
