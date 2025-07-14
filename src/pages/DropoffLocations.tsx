@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, Phone, Search, Navigation } from "lucide-react";
+import { GoogleMap } from "@/components/GoogleMap";
 
 export default function DropoffLocations() {
   const locations = [
@@ -81,59 +82,9 @@ export default function DropoffLocations() {
           </div>
         </div>
 
-        {/* Locations Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 max-w-6xl mx-auto">
-          {locations.map((location) => (
-            <Card key={location.id} className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="flex justify-between items-start mb-2">
-                  <CardTitle className="text-lg">{location.name}</CardTitle>
-                  <Badge variant={location.type === "Primary Location" ? "default" : "secondary"}>
-                    {location.type}
-                  </Badge>
-                </div>
-                <CardDescription className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5 text-primary flex-shrink-0" />
-                  <span>{location.address}</span>
-                </CardDescription>
-              </CardHeader>
-              
-              <CardContent className="space-y-4">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Clock className="h-4 w-4" />
-                  <span>{location.hours}</span>
-                </div>
-                
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Phone className="h-4 w-4" />
-                  <span>{location.phone}</span>
-                </div>
-                
-                <div>
-                  <h4 className="font-medium mb-2 text-sm">Accepted Items:</h4>
-                  <div className="flex flex-wrap gap-1">
-                    {location.acceptedItems.map((item, index) => (
-                      <Badge key={index} variant="outline" className="text-xs">
-                        {item}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="flex justify-between items-center pt-4 border-t">
-                  <span className="text-sm font-medium text-primary">{location.distance} away</span>
-                  <div className="flex gap-2">
-                    <Button variant="outline" size="sm">
-                      Get Directions
-                    </Button>
-                    <Button variant="eco" size="sm">
-                      Call Location
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Interactive Map */}
+        <div className="max-w-6xl mx-auto">
+          <GoogleMap locations={locations} />
         </div>
 
         {/* Additional Info Section */}
