@@ -14,7 +14,7 @@ export function Header() {
             alt="Communicycle Logo" 
             className="h-10 w-auto"
           />
-          <div className="text-lg md:text-xl lg:text-xl font-bold text-foreground">
+          <div className="text-base md:text-lg lg:text-xl font-bold text-foreground">
             Communicycle
           </div>
         </div>
