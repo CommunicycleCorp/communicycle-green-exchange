@@ -14,19 +14,19 @@ export function Header() {
             alt="Communicycle Logo" 
             className="h-10 w-auto"
           />
-          <div className="text-xl font-bold text-foreground">
+          <div className="text-lg md:text-xl lg:text-xl font-bold text-foreground">
             Communicycle
           </div>
         </div>
         
-        <nav className="hidden md:flex items-center space-x-8">
-          <a href="#services" className="text-foreground/80 hover:text-foreground transition-colors">
+        <nav className="flex items-center space-x-2 sm:space-x-4 md:space-x-8">
+          <a href="#services" className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors">
             Solutions
           </a>
-          <a href="#how-it-works" className="text-foreground/80 hover:text-foreground transition-colors">
+          <a href="#how-it-works" className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors">
             Process
           </a>
-          <a href="#contact" className="text-foreground/80 hover:text-foreground transition-colors">
+          <a href="#contact" className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors">
             Contact
           </a>
         </nav>

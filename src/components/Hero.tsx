@@ -7,12 +7,20 @@ export function Hero() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-[80vh] bg-gradient-hero flex items-center">
-      <div className="container mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="relative min-h-[60vh] lg:min-h-[80vh] bg-gradient-hero flex items-center">
+      {/* Mobile-only hero image */}
+      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 block md:hidden z-10">
+        <img 
+          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&h=200&q=80" 
+          alt="Electronic devices and laptop" 
+          className="w-80 h-32 object-cover rounded-lg shadow-lg"
+        />
+      </div>
+      <div className="container mx-auto px-6 py-8 md:py-12 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mt-20 md:mt-0">
           {/* Left Content */}
-          <div className="space-y-8">
-            <div className="space-y-4">
+          <div className="space-y-4 lg:space-y-8">
+            <div className="space-y-2 lg:space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
