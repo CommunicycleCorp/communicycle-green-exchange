@@ -21,8 +21,8 @@ export function Header() {
         </div>
         
         {/* Right section - navigation + buttons */}
-        <div className="flex items-center space-x-6">
-          <nav className="flex items-center space-x-4">
+        <div className="flex items-center space-x-8">
+          <nav className="flex items-center space-x-6 ml-8">
             <a href="#services" className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors">
               Solutions
             </a>
