@@ -159,19 +159,19 @@ export default function DropoffLocations() {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <main className="container mx-auto px-2 sm:px-6 py-4 sm:py-12">
         {/* Hero Section */}
         <div className="text-center mb-8 sm:mb-12">
-          <h1 className="text-2xl sm:text-4xl font-bold text-foreground mb-4">
-            Electronic Waste Drop-off Locations
+          <h1 className="text-xl sm:text-4xl font-bold text-foreground mb-3 sm:mb-4">
+            Drop-off Locations
           </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
-            Find convenient locations near you to safely dispose of your electronic devices. 
-            All locations follow certified e-waste recycling protocols.
+          <p className="text-sm sm:text-xl text-muted-foreground mb-4 sm:mb-8 max-w-2xl mx-auto px-4">
+            <span className="sm:hidden">Find nearby e-waste drop-off locations.</span>
+            <span className="hidden sm:inline">Find convenient locations near you to safely dispose of your electronic devices. All locations follow certified e-waste recycling protocols.</span>
           </p>
           
           {/* Search Bar */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto mb-6 sm:mb-8">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 max-w-sm sm:max-w-md mx-auto mb-4 sm:mb-8 px-4 sm:px-0">
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
               <Input 

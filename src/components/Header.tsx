@@ -45,7 +45,7 @@ export function Header() {
           <Button variant="hero" size="sm" className="hidden sm:inline-flex">
             Get Asset Valuation
           </Button>
-          <Button variant="eco" size="sm" onClick={() => navigate('/dropoff-locations')}>
+          <Button variant="eco" size="sm" onClick={() => navigate('/dropoff-locations')} className="hidden sm:inline-flex">
             Find Drop-off Location
           </Button>
         </div>
