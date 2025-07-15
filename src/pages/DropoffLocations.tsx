@@ -253,7 +253,7 @@ export default function DropoffLocations() {
               className="w-full sm:w-auto" 
               onClick={() => {
                 console.log('Contact Support clicked');
-                window.open('mailto:laith@communicycle.ca', '_self');
+                window.location.href = 'mailto:laith@communicycle.ca';
               }}
             >
               Contact Support
@@ -264,7 +264,7 @@ export default function DropoffLocations() {
               className="w-full sm:w-auto" 
               onClick={() => {
                 console.log('Schedule Pickup clicked');
-                window.open('mailto:laith@communicycle.ca', '_self');
+                window.location.href = 'mailto:laith@communicycle.ca';
               }}
             >
               Schedule Pickup
