@@ -8,8 +8,11 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4">
-        {/* Logo section - pushed to far left */}
-        <div className="flex items-center space-x-2">
+        {/* Logo section - clickable to navigate home */}
+        <div 
+          className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity" 
+          onClick={() => navigate('/')}
+        >
           <img 
             src="/lovable-uploads/a5794871-61ac-48eb-b0bf-669c4e654044.png" 
             alt="Communicycle Logo" 
