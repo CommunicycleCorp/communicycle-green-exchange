@@ -167,7 +167,7 @@ export default function DropoffLocations() {
           </h1>
           <p className="text-sm sm:text-xl text-muted-foreground mb-4 sm:mb-8 max-w-2xl mx-auto px-4">
             <span className="sm:hidden">Find nearby e-waste drop-off locations.</span>
-            <span className="hidden sm:inline">Find convenient locations near you to safely dispose of your electronic devices. All locations follow certified e-waste recycling protocols.</span>
+            <span className="hidden sm:inline">Find your local Communicycle bin to safely, ethically, and securely dispose of your electronics. All locations follow certified e-waste recycling protocols to protect your data and the environment. Our pricing model is standard—please reach out to support for details or assistance.</span>
           </p>
           
           {/* Search Bar */}
