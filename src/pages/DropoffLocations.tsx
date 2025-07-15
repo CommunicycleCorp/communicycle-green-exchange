@@ -247,10 +247,26 @@ export default function DropoffLocations() {
             Contact our team for personalized assistance with your e-waste disposal needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-sm sm:max-w-none mx-auto">
-            <Button variant="hero" size="lg" className="w-full sm:w-auto" onClick={() => window.location.href = 'mailto:laith@communicycle.ca'}>
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="w-full sm:w-auto" 
+              onClick={() => {
+                console.log('Contact Support clicked');
+                window.open('mailto:laith@communicycle.ca', '_self');
+              }}
+            >
               Contact Support
             </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto" onClick={() => window.location.href = 'mailto:laith@communicycle.ca'}>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="w-full sm:w-auto" 
+              onClick={() => {
+                console.log('Schedule Pickup clicked');
+                window.open('mailto:laith@communicycle.ca', '_self');
+              }}
+            >
               Schedule Pickup
             </Button>
           </div>
