@@ -240,37 +240,6 @@ export default function DropoffLocations() {
           </Card>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-8 sm:mt-12">
-          <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Need Help Finding the Right Location?</h3>
-          <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 px-4">
-            Contact our team for personalized assistance with your e-waste disposal needs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-sm sm:max-w-none mx-auto">
-            <Button 
-              variant="hero" 
-              size="lg" 
-              className="w-full sm:w-auto" 
-              onClick={() => {
-                console.log('Contact Support clicked');
-                window.location.href = 'mailto:laith@communicycle.ca';
-              }}
-            >
-              Contact Support
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="w-full sm:w-auto" 
-              onClick={() => {
-                console.log('Schedule Pickup clicked');
-                window.location.href = 'mailto:laith@communicycle.ca';
-              }}
-            >
-              Schedule Pickup
-            </Button>
-          </div>
-        </div>
       </main>
       
       <Footer />
