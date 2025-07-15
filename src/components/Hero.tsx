@@ -18,7 +18,7 @@ export function Hero() {
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                <strong>ITAD Asset Recovery:</strong> We pick up, refurbish, and resell your TVs, laptops, computers, and phones — all at no cost to you. Whether you're a household or a business, we maximize the value of your working electronics and return the profits to you — with zero effort and maximum payout.<br/><br/>
+                <strong>ITAD Asset Recovery: Free Refurbishment & Resale of Your Electronics for Maximum Payout</strong> We pick up, refurbish, and resell your TVs, laptops, computers, and phones — all at no cost to you. Whether you're a household or a business, we maximize the value of your working electronics and return the profits to you — with zero effort and maximum payout.<br/><br/>
                 <strong>End-of-Life Recycling:</strong> Public drop-off End-of-Life electronic recycling network ensuring zero electronic waste reaches landfills.
               </p>
             </div>
