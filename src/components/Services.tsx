@@ -9,9 +9,9 @@ export function Services() {
   const mainServices = [
     {
       icon: DollarSign,
-      title: "ITAD Asset Recovery",
+      title: "ITAD Asset Recovery: Free Refurbishment & Resale of Your Electronics for Maximum Payout",
       subtitle: "IT Asset Disposition & Refurbishment",
-      description: "Professional refurbishment and resale of working IT equipment. Maximize value recovery from functional electronics through certified refurbishment processes.",
+      description: "We pick up, refurbish, and resell your TVs, laptops, computers, and phones — all at no cost to you. Whether you're a household or a business, we maximize the value of your working electronics and return most of the profits to you — with zero effort and maximum payout.",
       businessFeatures: ["Corporate equipment liquidation", "Data center decommissioning", "Office technology upgrades", "Fleet device management"],
       residentialFeatures: ["Individual device evaluation", "Home office equipment", "Consumer electronics", "Gaming systems"],
       cta: "Get Asset Valuation",
