@@ -1,8 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Package, Search, DollarSign, Recycle, ArrowRight, Shield, RotateCcw, Phone, Truck, CheckCircle, FileText, Mail } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function HowItWorks() {
+  const navigate = useNavigate();
+  
   const itadSteps = [
     {
       icon: FileText,
@@ -178,7 +181,7 @@ export function HowItWorks() {
                 <DollarSign className="mr-2 h-5 w-5" />
                 Get Asset Valuation
               </Button>
-              <Button variant="eco" size="lg">
+              <Button variant="eco" size="lg" onClick={() => navigate('/dropoff-locations')}>
                 <Package className="mr-2 h-5 w-5" />
                 Find Drop-off Location
               </Button>

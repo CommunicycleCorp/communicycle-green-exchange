@@ -1,8 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { DollarSign, Recycle, Building, Users, Laptop, Smartphone, Monitor, Gamepad2, ArrowRight, Shield, RotateCcw } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function Services() {
+  const navigate = useNavigate();
+  
   const mainServices = [
     {
       icon: DollarSign,
@@ -90,7 +93,7 @@ export function Services() {
                 <Button 
                   variant={index === 0 ? "hero" : "eco"} 
                   className="w-full group"
-                  onClick={() => index === 0 ? window.open('https://tally.so/r/w40aVO', '_blank') : null}
+                  onClick={() => index === 0 ? window.open('https://tally.so/r/w40aVO', '_blank') : navigate('/dropoff-locations')}
                 >
                   {service.cta}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

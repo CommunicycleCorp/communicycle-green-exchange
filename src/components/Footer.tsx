@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Phone, Mail, MapPin, Clock, Recycle, DollarSign } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function Footer() {
+  const navigate = useNavigate();
+  
   return (
     <footer id="contact" className="bg-foreground text-background">
       <div className="container mx-auto px-6 py-16">
@@ -68,7 +71,7 @@ export function Footer() {
                 <DollarSign className="mr-2 h-4 w-4" />
                 ITAD Asset Recovery
               </Button>
-              <Button variant="outline" className="w-full bg-transparent border-background/20 text-background hover:bg-background/10">
+              <Button variant="outline" className="w-full bg-transparent border-background/20 text-background hover:bg-background/10" onClick={() => navigate('/dropoff-locations')}>
                 <Recycle className="mr-2 h-4 w-4" />
                 Find Drop-off Location
               </Button>
