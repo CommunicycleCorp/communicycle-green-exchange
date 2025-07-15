@@ -26,15 +26,24 @@ export function Header() {
         {/* Right section - navigation + buttons */}
         <div className="flex items-center space-x-8">
           <nav className="flex items-center space-x-5 ml-12">
-            <a href="#" className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors">
+            <button 
+              onClick={() => navigate('/')}
+              className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
+            >
               Home
-            </a>
-            <a href="#services" className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors">
+            </button>
+            <button 
+              onClick={() => navigate('/#services')}
+              className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
+            >
               Solutions
-            </a>
-            <a href="#contact" className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors">
+            </button>
+            <button 
+              onClick={() => navigate('/#contact')}
+              className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
+            >
               Contact
-            </a>
+            </button>
           </nav>
           
           {/* Contact info and buttons */}
