@@ -11,7 +11,7 @@ export function Services() {
       icon: DollarSign,
       title: "ITAD Asset Recovery: Free Refurbishment & Resale of Your Electronics for Maximum Payout",
       subtitle: "IT Asset Disposition & Refurbishment",
-      description: "We pick up, refurbish, and resell your TVs, laptops, computers, and phones — all at no cost to you. Whether you're a household or a business, we maximize the value of your working electronics and return most of the profits to you — with zero effort and maximum payout.",
+      description: "We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.",
       businessFeatures: ["Corporate equipment liquidation", "Data center decommissioning", "Office technology upgrades", "Fleet device management"],
       residentialFeatures: ["Individual device evaluation", "Home office equipment", "Consumer electronics", "Gaming systems"],
       cta: "Get Asset Valuation",
