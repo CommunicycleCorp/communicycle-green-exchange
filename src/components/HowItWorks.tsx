@@ -58,7 +58,7 @@ export function HowItWorks() {
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl font-bold text-foreground">Our Dual-Path Process</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Every device is evaluated to determine the optimal path: refurbishment for maximum value recovery or responsible End-of-Life Electronic Recycling: Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.
+            Every device is evaluated to determine the optimal path: refurbishment for maximum value recovery or responsible end-of-life recycling
           </p>
         </div>
 
@@ -114,7 +114,7 @@ export function HowItWorks() {
         {/* Recycling Process */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-foreground mb-2">End-of-Life Electronic Recycling: Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-2">End-of-Life Recycling Process</h3>
             <p className="text-muted-foreground">For non-working or obsolete electronic devices</p>
           </div>
           
@@ -170,7 +170,7 @@ export function HowItWorks() {
           <div className="bg-accent/40 rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Get Started?</h3>
             <p className="text-muted-foreground mb-6">
-              Whether you need asset recovery or End-of-Life Electronic Recycling: Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle., we have the expertise and infrastructure to handle your electronics responsibly.
+              Whether you need asset recovery or end-of-life recycling, we have the expertise and infrastructure to handle your electronics responsibly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 

@@ -20,7 +20,7 @@ export function Services() {
     },
     {
       icon: Recycle,
-      title: "End-of-Life Electronic Recycling: Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.",
+      title: "End-of-Life Recycling",
       subtitle: "Public Drop-off Network Operations",
       description: "The first electronic recycling system operated by public drop-off operators to divert every electronic device from landfills with zero-waste guarantee.",
       businessFeatures: ["Convenient neighborhood locations", "No appointment necessary", "All electronics accepted", "Certified destruction processes"],
