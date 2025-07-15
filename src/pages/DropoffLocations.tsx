@@ -220,10 +220,8 @@ export default function DropoffLocations() {
             </CardHeader>
             <CardContent className="grid sm:grid-cols-2 gap-4 sm:gap-6 text-left p-4 sm:p-6 pt-0">
               <div>
-                <h4 className="font-medium mb-3 text-sm sm:text-base">What to Bring:</h4>
+                <h4 className="font-medium mb-3 text-sm sm:text-base">Before Coming:</h4>
                 <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground">
-                  <li>• Valid government-issued ID</li>
-                  <li>• Proof of ownership for valuable items</li>
                   <li>• Remove all personal data beforehand</li>
                   <li>• Separate batteries from devices when possible</li>
                 </ul>
