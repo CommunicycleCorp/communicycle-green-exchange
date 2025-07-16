@@ -77,7 +77,10 @@ export function Header() {
             <Button variant="hero" size="sm" className="hidden sm:inline-flex text-xs" onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}>
               Get Asset Valuation
             </Button>
-            <Button variant="eco" size="sm" onClick={() => navigate('/dropoff-locations')} className="hidden sm:inline-flex text-xs">
+            <Button variant="eco" size="sm" onClick={() => {
+              navigate('/dropoff-locations');
+              setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+            }} className="hidden sm:inline-flex text-xs">
               Find Drop-off Location
             </Button>
           </div>
