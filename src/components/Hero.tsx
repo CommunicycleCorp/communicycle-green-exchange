@@ -47,11 +47,7 @@ export function Hero() {
                 <DollarSign className="mr-2 h-5 w-5" />
                 ITAD Asset Recovery
               </Button>
-              <Button variant="hero" size="xl" className="flex-1 sm:hidden" onClick={() => navigate('/dropoff-locations')}>
-                <Recycle className="mr-2 h-5 w-5" />
-                Find Drop-off Location
-              </Button>
-              <Button variant="eco" size="xl" className="hidden sm:flex flex-1 sm:flex-none" onClick={() => navigate('/dropoff-locations')}>
+              <Button variant="hero" size="xl" className="flex-1 sm:flex-none" onClick={() => navigate('/dropoff-locations')}>
                 <Recycle className="mr-2 h-5 w-5" />
                 Find Drop-off Location
               </Button>
