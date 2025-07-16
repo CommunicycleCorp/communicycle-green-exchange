@@ -71,7 +71,10 @@ export function Footer() {
                 <DollarSign className="mr-2 h-4 w-4" />
                 ITAD Asset Recovery
               </Button>
-              <Button variant="outline" className="w-full bg-transparent border-background/20 text-background hover:bg-background/10" onClick={() => navigate('/dropoff-locations')}>
+              <Button variant="outline" className="w-full bg-transparent border-background/20 text-background hover:bg-background/10" onClick={() => {
+                navigate('/dropoff-locations');
+                setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+              }}>
                 <Recycle className="mr-2 h-4 w-4" />
                 Find Drop-off Location
               </Button>
