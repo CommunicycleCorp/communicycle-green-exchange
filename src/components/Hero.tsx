@@ -7,8 +7,17 @@ export function Hero() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-[70vh] lg:min-h-[80vh] bg-gradient-hero flex items-center">
-      <div className="container mx-auto px-6 py-4 md:py-12 lg:py-20">
+    <section className="relative min-h-[70vh] lg:min-h-[80vh] flex items-center overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/lovable-uploads/81c17b36-34f9-4958-ba7e-4cbcfaecefd5.png')`,
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+      </div>
+      <div className="container mx-auto px-6 py-4 md:py-12 lg:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-4 lg:space-y-8">
