@@ -8,7 +8,7 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[70vh] lg:min-h-[80vh] bg-gradient-hero flex items-center">
-      <div className="container mx-auto px-6 py-16 md:py-12 lg:py-20">
+      <div className="container mx-auto px-6 py-8 md:py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-4 lg:space-y-8">
