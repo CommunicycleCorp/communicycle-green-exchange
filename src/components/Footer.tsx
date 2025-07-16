@@ -86,7 +86,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm text-background/60">
-            © 2024 Communicycle Incorporated. All rights reserved.
+            © 2025, Communicycle Corp.
           </div>
           <div className="flex space-x-6 text-sm text-background/60">
             <a href="#" className="hover:text-background transition-colors">Privacy Policy</a>
