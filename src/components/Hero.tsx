@@ -21,13 +21,24 @@ export function Hero() {
                 <strong>ITAD Asset Recovery - Free Refurbishment & Resale of Your Electronics for Maximum Payout:</strong> We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.<br/><br/>
                 <strong>End-of-Life Electronic Recycling:</strong> Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.
               </p>
+
+              {/* Mobile-only ITAD button positioned right after paragraph */}
+              <Button 
+                variant="hero" 
+                size="xl" 
+                className="sm:hidden w-full"
+                onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
+              >
+                <DollarSign className="mr-2 h-5 w-5" />
+                ITAD Asset Recovery
+              </Button>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 variant="hero" 
                 size="xl" 
-                className="flex-1 sm:flex-none"
+                className="hidden sm:flex flex-1 sm:flex-none"
                 onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
               >
                 <DollarSign className="mr-2 h-5 w-5" />
