@@ -27,7 +27,12 @@ export function Header() {
         <div className="flex items-center space-x-8">
           <nav className="flex items-center space-x-5 ml-12">
             <button 
-              onClick={() => navigate('/')}
+              onClick={() => {
+                navigate('/');
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}
               className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
             >
               Home
