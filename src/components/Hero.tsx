@@ -7,8 +7,8 @@ export function Hero() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-[45vh] lg:min-h-[80vh] bg-gradient-hero flex items-center">
-      <div className="container mx-auto px-6 py-6 md:py-12 lg:py-20">
+    <section className="relative min-h-[60vh] lg:min-h-[80vh] bg-gradient-hero flex items-center">
+      <div className="container mx-auto px-6 py-10 md:py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-4 lg:space-y-8">
