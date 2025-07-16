@@ -17,8 +17,11 @@ export function Hero() {
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                <strong>ITAD Asset Recovery - Free Refurbishment & Resale of Your Electronics for Maximum Payout:</strong> We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.
+              </p>
 
-              {/* Mobile-only ITAD button positioned between title and paragraph */}
+              {/* Mobile-only ITAD button positioned between paragraphs */}
               <Button 
                 variant="hero" 
                 size="lg" 
@@ -30,7 +33,6 @@ export function Hero() {
               </Button>
 
               <p className="text-xl text-muted-foreground leading-relaxed">
-                <strong>ITAD Asset Recovery - Free Refurbishment & Resale of Your Electronics for Maximum Payout:</strong> We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.<br/><br/>
                 <strong>End-of-Life Electronic Recycling:</strong> Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.
               </p>
             </div>
