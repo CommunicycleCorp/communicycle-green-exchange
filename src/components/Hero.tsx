@@ -7,7 +7,7 @@ export function Hero() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-[70vh] lg:min-h-[80vh] bg-white bg-cover bg-center bg-no-repeat flex items-center" style={{backgroundImage: "url('/lovable-uploads/a6382203-37fa-4a6e-b2e6-18819e93afe9.png')"}}>
+    <section className="relative min-h-[70vh] lg:min-h-[80vh] bg-white bg-cover bg-center bg-no-repeat flex items-center" style={{backgroundImage: "url('/lovable-uploads/19396698-9640-40a7-9fca-03779edb0ca9.png')", transform: "rotate(90deg)", backgroundSize: "cover"}}>
       <div className="container mx-auto px-6 py-4 md:py-12 lg:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
