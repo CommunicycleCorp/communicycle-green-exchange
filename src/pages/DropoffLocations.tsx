@@ -11,151 +11,18 @@ import { useToast } from "@/hooks/use-toast";
 
 export default function DropoffLocations() {
   const [searchInput, setSearchInput] = useState("");
-  const [userLocation, setUserLocation] = useState<{
-    lat: number;
-    lng: number;
-  } | null>(null);
-  const [sortedLocations, setSortedLocations] = useState<any[]>([]);
   const { toast } = useToast();
 
-  const locations = [
-    {
-      id: 1,
-      name: "Oakville Electronics Depot",
-      address: "123 Main Street, Oakville, ON L6K 2M3",
-      phone: "(905) 555-0123",
-      hours: "Mon-Fri: 8AM-6PM, Sat: 9AM-4PM",
-      acceptedItems: ["Laptops", "Smartphones", "Tablets", "Desktop Computers", "Monitors"],
-      distance: "2.1 km",
-      type: "Primary Location",
-      lat: 43.4675,
-      lng: -79.6877
-    },
-    {
-      id: 2,
-      name: "Burlington Tech Recycling",
-      address: "456 Industrial Ave, Burlington, ON L7P 1A1",
-      phone: "(905) 555-0456",
-      hours: "Mon-Sat: 9AM-5PM",
-      acceptedItems: ["All Electronics", "Batteries", "Cables", "Printers"],
-      distance: "8.5 km",
-      type: "Partner Location",
-      lat: 43.3255,
-      lng: -79.7990
-    },
-    {
-      id: 3,
-      name: "Milton Green Electronics",
-      address: "789 Environmental Way, Milton, ON L9T 2K5",
-      phone: "(905) 555-0789",
-      hours: "Tue-Sat: 10AM-6PM",
-      acceptedItems: ["Consumer Electronics", "Small Appliances", "Gaming Consoles"],
-      distance: "12.3 km",
-      type: "Partner Location",
-      lat: 43.5183,
-      lng: -79.8774
-    },
-    {
-      id: 4,
-      name: "Mississauga E-Waste Center",
-      address: "321 Recycling Blvd, Mississauga, ON L5B 3M2",
-      phone: "(905) 555-0321",
-      hours: "Mon-Fri: 7AM-7PM, Sat-Sun: 9AM-5PM",
-      acceptedItems: ["All Electronics", "Data Destruction", "Bulk Commercial"],
-      distance: "15.7 km",
-      type: "Certified Partner",
-      lat: 43.5890,
-      lng: -79.6441
-    }
-  ];
-
-  // Calculate distance between two coordinates using Haversine formula
-  const calculateDistance = (lat1: number, lng1: number, lat2: number, lng2: number) => {
-    const R = 6371; // Earth's radius in kilometers
-    const dLat = (lat2 - lat1) * Math.PI / 180;
-    const dLng = (lng2 - lng1) * Math.PI / 180;
-    const a =
-      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-      Math.sin(dLng / 2) * Math.sin(dLng / 2);
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    return R * c;
-  };
-
-  // Get user's current location
-  const getCurrentLocation = () => {
-    if (!navigator.geolocation) {
+  // Simple function to scroll to map
+  const scrollToMap = () => {
+    const mapElement = document.getElementById('locations-map');
+    if (mapElement) {
+      mapElement.scrollIntoView({ behavior: 'smooth' });
       toast({
-        title: "Geolocation not supported",
-        description: "Your browser doesn't support geolocation.",
-        variant: "destructive"
+        title: "Map locations",
+        description: "View all drop-off locations on the map below."
       });
-      return;
     }
-
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const { latitude, longitude } = position.coords;
-        setUserLocation({ lat: latitude, lng: longitude });
-
-        // Calculate distances and sort locations
-        const locationsWithDistance = locations.map(location => {
-          const distance = calculateDistance(latitude, longitude, location.lat, location.lng);
-          return {
-            ...location,
-            calculatedDistance: distance,
-            distance: `${distance.toFixed(1)} km`
-          };
-        }).sort((a, b) => a.calculatedDistance - b.calculatedDistance);
-
-        setSortedLocations(locationsWithDistance);
-        toast({
-          title: "Location found!",
-          description: `Found ${locationsWithDistance.length} locations near you. Closest is ${locationsWithDistance[0].name} (${locationsWithDistance[0].distance}).`
-        });
-      },
-      (error) => {
-        let errorMessage = "Unable to get your location.";
-        switch (error.code) {
-          case error.PERMISSION_DENIED:
-            errorMessage = "Location access denied. Please enable location permissions.";
-            break;
-          case error.POSITION_UNAVAILABLE:
-            errorMessage = "Location information unavailable.";
-            break;
-          case error.TIMEOUT:
-            errorMessage = "Location request timed out.";
-            break;
-        }
-        toast({
-          title: "Location error",
-          description: errorMessage,
-          variant: "destructive"
-        });
-      }
-    );
-  };
-
-  // Search by postal code or address (simplified version)
-  const searchByAddress = async () => {
-    if (!searchInput.trim()) {
-      getCurrentLocation();
-      return;
-    }
-
-    toast({
-      title: "Searching...",
-      description: "Looking for locations near your address."
-    });
-
-    // In a real app, you'd use a geocoding service here
-    // For now, we'll simulate a search
-    setTimeout(() => {
-      toast({
-        title: "Search completed",
-        description: "Showing all available locations. Use 'Find Nearby' with location access for precise results."
-      });
-    }, 1000);
   };
 
   return (
@@ -182,14 +49,14 @@ export default function DropoffLocations() {
                 className="pl-10 w-full"
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && searchByAddress()}
+                onKeyDown={(e) => e.key === 'Enter' && scrollToMap()}
               />
             </div>
             <Button
               variant="hero"
               size="default"
               className="flex items-center justify-center gap-2 w-full sm:w-auto"
-              onClick={searchByAddress}
+              onClick={scrollToMap}
             >
               <Navigation className="h-4 w-4" />
               <span className="sm:hidden">Find</span>
@@ -199,7 +66,7 @@ export default function DropoffLocations() {
         </div>
 
         {/* Embedded Google My Maps */}
-        <div className="max-w-6xl mx-auto mb-12 sm:mb-16">
+        <div id="locations-map" className="max-w-6xl mx-auto mb-12 sm:mb-16">
           <div className="w-full rounded-lg overflow-hidden shadow-lg">
             <iframe
               src="https://www.google.com/maps/d/embed?mid=19VkdGhFA0Z9kZwx34QwfSARDNiug7sE&ehbc=2E312F"
