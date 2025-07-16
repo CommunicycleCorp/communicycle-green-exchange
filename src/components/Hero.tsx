@@ -24,7 +24,7 @@ export function Hero() {
               {/* Mobile-only ITAD button positioned between paragraphs */}
               <Button 
                 variant="hero" 
-                size="lg" 
+                size="xl" 
                 className="sm:hidden"
                 onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
               >
