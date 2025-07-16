@@ -33,13 +33,23 @@ export function Header() {
               Home
             </button>
             <button 
-              onClick={() => navigate('/#services')}
+              onClick={() => {
+                navigate('/');
+                setTimeout(() => {
+                  document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+              }}
               className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
             >
               Solutions
             </button>
             <button 
-              onClick={() => navigate('/#contact')}
+              onClick={() => {
+                navigate('/');
+                setTimeout(() => {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+              }}
               className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
             >
               Contact
