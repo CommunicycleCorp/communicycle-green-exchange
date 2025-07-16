@@ -47,7 +47,9 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>laith@communicycle.ca</span>
+                <a href="mailto:laith@communicycle.ca" className="hover:text-background transition-colors">
+                  laith@communicycle.ca
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
