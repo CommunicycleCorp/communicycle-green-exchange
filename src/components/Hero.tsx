@@ -15,19 +15,19 @@ export function Hero() {
           backgroundImage: `url('/lovable-uploads/81c17b36-34f9-4958-ba7e-4cbcfaecefd5.png')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
       </div>
-      <div className="container mx-auto px-6 py-4 md:py-12 lg:py-20 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 py-8 md:py-12 lg:py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-4 lg:space-y-8">
             <div className="space-y-2 lg:space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                <strong>ITAD Asset Recovery - Free Refurbishment & Resale of Your Electronics for Maximum Payout:</strong> We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.
+              <p className="text-base md:text-xl text-white/90 leading-relaxed">
+                <strong className="text-white">ITAD Asset Recovery - Free Refurbishment & Resale of Your Electronics for Maximum Payout:</strong> We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.
               </p>
 
               {/* Mobile-only ITAD button positioned between paragraphs */}
@@ -41,8 +41,8 @@ export function Hero() {
                 ITAD Asset Recovery
               </Button>
 
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                <strong>End-of-Life Electronic Recycling:</strong> Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.
+              <p className="text-base md:text-xl text-white/90 leading-relaxed">
+                <strong className="text-white">End-of-Life Electronic Recycling:</strong> Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.
               </p>
             </div>
 
@@ -63,17 +63,17 @@ export function Hero() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-6 pt-4">
-              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Shield className="h-5 w-5 text-primary" />
+            <div className="flex flex-wrap gap-4 md:gap-6 pt-4">
+              <div className="flex items-center space-x-2 text-xs md:text-sm text-white/80">
+                <Shield className="h-4 w-4 md:h-5 md:w-5 text-primary" />
                 <span>Secure Data Destruction</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Users className="h-5 w-5 text-primary" />
+              <div className="flex items-center space-x-2 text-xs md:text-sm text-white/80">
+                <Users className="h-4 w-4 md:h-5 md:w-5 text-primary" />
                 <span>Business & Residential</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Recycle className="h-5 w-5 text-primary" />
+              <div className="flex items-center space-x-2 text-xs md:text-sm text-white/80">
+                <Recycle className="h-4 w-4 md:h-5 md:w-5 text-primary" />
                 <span>Zero Landfill Policy</span>
               </div>
             </div>
