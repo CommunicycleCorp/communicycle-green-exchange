@@ -13,11 +13,11 @@ export function Hero() {
           {/* Left Content */}
           <div className="space-y-4 lg:space-y-8">
             <div className="space-y-2 lg:space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl text-white leading-relaxed">
                 <strong>ITAD Asset Recovery - Free Refurbishment & Resale of Your Electronics for Maximum Payout:</strong> We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.
               </p>
 
@@ -32,7 +32,7 @@ export function Hero() {
                 ITAD Asset Recovery
               </Button>
 
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl text-white leading-relaxed">
                 <strong>End-of-Life Electronic Recycling:</strong> Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.
               </p>
             </div>
@@ -55,15 +55,15 @@ export function Hero() {
 
             {/* Trust Indicators */}
             <div className="flex flex-wrap gap-6 pt-4">
-              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+              <div className="flex items-center space-x-2 text-sm text-white">
                 <Shield className="h-5 w-5 text-primary" />
                 <span>Secure Data Destruction</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+              <div className="flex items-center space-x-2 text-sm text-white">
                 <Users className="h-5 w-5 text-primary" />
                 <span>Business & Residential</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+              <div className="flex items-center space-x-2 text-sm text-white">
                 <Recycle className="h-5 w-5 text-primary" />
                 <span>Zero Landfill Policy</span>
               </div>
