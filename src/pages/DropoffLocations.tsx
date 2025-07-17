@@ -103,16 +103,6 @@ export default function DropoffLocations() {
                 onKeyDown={(e) => e.key === 'Enter' && scrollToMap()}
               />
             </div>
-            <Button
-              variant="hero"
-              size="default"
-              className="flex items-center justify-center gap-2 w-full sm:w-auto"
-              onClick={scrollToMap}
-            >
-              <Navigation className="h-4 w-4" />
-              <span className="sm:hidden">Find</span>
-              <span className="hidden sm:inline">Find Nearby</span>
-            </Button>
           </div>
         </div>
 
