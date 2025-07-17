@@ -93,7 +93,14 @@ export function Services() {
                 <Button 
                   variant={index === 0 ? "hero" : "eco"} 
                   className="w-full group"
-                  onClick={() => index === 0 ? window.open('https://tally.so/r/w40aVO', '_blank') : navigate('/dropoff-locations')}
+                  onClick={() => {
+                    if (index === 0) {
+                      window.open('https://tally.so/r/w40aVO', '_blank');
+                    } else {
+                      navigate('/dropoff-locations');
+                      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+                    }
+                  }}
                 >
                   {service.cta}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -102,7 +109,6 @@ export function Services() {
             </Card>
           ))}
         </div>
-
 
         {/* Accepted Devices */}
         <div className="bg-accent/30 rounded-2xl p-8">
