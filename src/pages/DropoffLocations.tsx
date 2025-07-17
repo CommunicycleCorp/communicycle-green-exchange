@@ -65,19 +65,21 @@ export default function DropoffLocations() {
           </div>
         </div>
 
-        {/* Embedded Google My Maps */}
+        {/* StoreRocket Store Locator */}
         <div id="locations-map" className="max-w-6xl mx-auto mb-12 sm:mb-16">
-          <div className="w-full rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/d/embed?mid=19VkdGhFA0Z9kZwx34QwfSARDNiug7sE&ehbc=2E312F"
-              width="100%"
-              height="350"
-              className="border-0 sm:h-[500px]"
-              loading="lazy"
-              title="Electronic Waste Drop-off Locations"
-            />
+          <div className="w-full rounded-lg overflow-hidden shadow-lg bg-background p-4">
+            <div id='storerocket-widget' style={{width:'100%'}} data-storerocket-env='p' data-storerocket-id='5Z4wWDz4Pd'>
+              <p style={{textAlign:'center', fontSize:'13px', padding:'10px'}}>
+                Store locator is loading from StoreRocket <a target='_blank' href='https://storerocket.io' style={{fontSize:'13px'}}>Store Locator App</a>..
+              </p>
+            </div>
           </div>
         </div>
+
+        {/* Load StoreRocket Script */}
+        <script dangerouslySetInnerHTML={{
+          __html: `(function(){var a=document.createElement('script');a.type='text/javascript';a.async=!0;a.src='https://cdn.storerocket.io/js/widget-mb.js';var b=document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a,b);}())`
+        }} />
 
         {/* Additional Info Section */}
         <div className="mt-12 sm:mt-16 text-center">
