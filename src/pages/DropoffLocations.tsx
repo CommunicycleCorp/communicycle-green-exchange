@@ -6,12 +6,63 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, Phone, Search, Navigation } from "lucide-react";
 import { Toaster } from "@/components/ui/toaster";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
+
+// Declare StoreRocket global type
+declare global {
+  interface Window {
+    StoreRocket?: {
+      init: (config: { selector: string; account: string }) => void;
+    };
+  }
+}
 
 export default function DropoffLocations() {
   const [searchInput, setSearchInput] = useState("");
+  const [isWidgetLoading, setIsWidgetLoading] = useState(true);
   const { toast } = useToast();
+
+  // Initialize StoreRocket widget
+  useEffect(() => {
+    const loadStoreRocketWidget = () => {
+      // Check if script is already loaded
+      if (window.StoreRocket) {
+        // Initialize the widget
+        window.StoreRocket.init({
+          selector: ".storerocket-store-locator",
+          account: "5Z4wWDz4Pd"
+        });
+        setIsWidgetLoading(false);
+        return;
+      }
+
+      // Load the StoreRocket script
+      const script = document.createElement('script');
+      script.src = '//cdn.storerocket.io/widget.js';
+      script.async = true;
+      
+      script.onload = () => {
+        // Initialize the widget after script loads
+        if (window.StoreRocket) {
+          window.StoreRocket.init({
+            selector: ".storerocket-store-locator",
+            account: "5Z4wWDz4Pd"
+          });
+          setIsWidgetLoading(false);
+        }
+      };
+
+      script.onerror = () => {
+        console.error('Failed to load StoreRocket widget');
+        setIsWidgetLoading(false);
+      };
+
+      document.head.appendChild(script);
+    };
+
+    loadStoreRocketWidget();
+  }, []);
 
   // Simple function to scroll to map
   const scrollToMap = () => {
@@ -67,19 +118,19 @@ export default function DropoffLocations() {
 
         {/* StoreRocket Store Locator */}
         <div id="locations-map" className="max-w-6xl mx-auto mb-12 sm:mb-16">
-          <div className="w-full rounded-lg overflow-hidden shadow-lg bg-background p-4">
-            <div id='storerocket-widget' style={{width:'100%'}} data-storerocket-env='p' data-storerocket-id='5Z4wWDz4Pd'>
-              <p style={{textAlign:'center', fontSize:'13px', padding:'10px'}}>
-                Store locator is loading from StoreRocket <a target='_blank' href='https://storerocket.io' style={{fontSize:'13px'}}>Store Locator App</a>..
-              </p>
+          <div className="w-full rounded-lg overflow-hidden shadow-lg bg-background p-4 min-h-[400px]">
+            <div className="storerocket-store-locator" style={{width: '100%', minHeight: '350px'}}>
+              {isWidgetLoading && (
+                <div className="flex items-center justify-center h-64">
+                  <div className="text-center">
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+                    <p className="text-sm text-muted-foreground">Loading store locator...</p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
-
-        {/* Load StoreRocket Script */}
-        <script dangerouslySetInnerHTML={{
-          __html: `(function(){var a=document.createElement('script');a.type='text/javascript';a.async=!0;a.src='https://cdn.storerocket.io/js/widget-mb.js';var b=document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a,b);}())`
-        }} />
 
         {/* Additional Info Section */}
         <div className="mt-12 sm:mt-16 text-center">
