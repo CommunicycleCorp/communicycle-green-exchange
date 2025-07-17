@@ -1,3 +1,4 @@
+
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -19,7 +20,6 @@ declare global {
 }
 
 export default function DropoffLocations() {
-  const [searchInput, setSearchInput] = useState("");
   const [isWidgetLoading, setIsWidgetLoading] = useState(true);
   const { toast } = useToast();
 
@@ -64,18 +64,6 @@ export default function DropoffLocations() {
     loadStoreRocketWidget();
   }, []);
 
-  // Simple function to scroll to map
-  const scrollToMap = () => {
-    const mapElement = document.getElementById('locations-map');
-    if (mapElement) {
-      mapElement.scrollIntoView({ behavior: 'smooth' });
-      toast({
-        title: "Map locations",
-        description: "View all drop-off locations on the map below."
-      });
-    }
-  };
-
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -90,20 +78,6 @@ export default function DropoffLocations() {
             <span className="sm:hidden">Find your local Communicycle bin - e-waste drop-off locations. </span>
             <span className="hidden sm:inline">Find your local Communicycle bin to safely, ethically, and securely dispose of your electronics. All locations follow certified e-waste recycling protocols to protect your data and the environment. Our pricing model is standard—please reach out to support for details or assistance.</span>
           </p>
-          
-          {/* Search Bar */}
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 max-w-sm sm:max-w-md mx-auto mb-4 sm:mb-8 px-4 sm:px-0">
-            <div className="flex-1 relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-              <Input
-                placeholder="Enter postal code or address"
-                className="pl-10 w-full"
-                value={searchInput}
-                onChange={(e) => setSearchInput(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && scrollToMap()}
-              />
-            </div>
-          </div>
         </div>
 
         {/* StoreRocket Store Locator */}
