@@ -14,7 +14,7 @@ export function Header() {
           onClick={() => navigate('/')}
         >
           <img 
-            src="/lovable-uploads/a5794871-61ac-48eb-b0bf-669c4e654044.png" 
+            src="/lovable-uploads/4120fd5f-5689-4777-9715-8fbe53220acd.png" 
             alt="Communicycle Logo" 
             className="h-20 w-auto"
           />
