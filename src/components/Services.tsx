@@ -52,7 +52,7 @@ export function Services() {
         {/* Main Service Divisions */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
           {mainServices.map((service, index) => (
-            <Card key={index} className={`p-10 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 border-l-4 ${service.borderColor}`}>
+            <Card key={index} className={`p-4 sm:p-6 lg:p-10 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 border-l-4 ${service.borderColor}`}>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className={`h-16 w-16 ${service.bgColor} rounded-lg flex items-center justify-center`}>
