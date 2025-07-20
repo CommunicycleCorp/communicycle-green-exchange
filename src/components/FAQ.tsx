@@ -9,7 +9,7 @@ export const FAQ = () => {
   const faqs = [
     {
       question: "How much do I typically get paid?",
-      answer: "Payment amounts vary significantly based on the type, condition, age, and market demand for your electronics. We evaluate each item's refurbishment potential and current market value. You'll receive a detailed assessment and profit-sharing proposal before we proceed with any work."
+      answer: "What you earn depends on your device's type, condition, age, and market demand — but one thing's guaranteed: we fight to get you the most. We assess each item's real potential and sell it the smart way — no quick flips, no reseller lowballs. We only profit when you do, so our incentive is simple: maximize your return. You won't find any shady buy-low-sell-high games here — just a straightforward, transparent process built to get you paid."
     },
     {
       question: "What types of electronics do you accept?",
