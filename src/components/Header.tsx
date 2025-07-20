@@ -1,8 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { MobileNav } from "./MobileNav";
 
 export function Header() {
   const navigate = useNavigate();
@@ -25,28 +24,6 @@ export function Header() {
         {/* Desktop navigation */}
         <div className="hidden md:flex items-center space-x-8">
           <nav className="flex items-center space-x-5 ml-12">
-            <button 
-              onClick={() => {
-                navigate('/');
-                setTimeout(() => {
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }, 100);
-              }}
-              className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => {
-                navigate('/about');
-                setTimeout(() => {
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }, 100);
-              }}
-              className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
-            >
-              About
-            </button>
             <button 
               onClick={() => {
                 navigate('/');
@@ -96,8 +73,12 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile navigation */}
-        <MobileNav />
+        {/* Mobile menu button */}
+        <div className="md:hidden">
+          <Button variant="ghost" size="sm">
+            <Menu className="h-5 w-5" />
+          </Button>
+        </div>
       </div>
     </header>
   );
