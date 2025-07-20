@@ -24,10 +24,6 @@ export const FAQ = () => {
       answer: "Yes, we offer convenient pickup services for businesses and individuals with large quantities of electronics. Contact us to schedule a pickup and get a quote."
     },
     {
-      question: "Are you environmentally certified?",
-      answer: "Yes, we are committed to responsible recycling practices and hold relevant environmental certifications. We ensure all materials are processed according to environmental regulations."
-    },
-    {
       question: "How quickly can you process my electronics?",
       answer: "Processing times vary depending on quantity and services required. Typically, we can evaluate and process items within 1-3 business days. Rush services are available for urgent needs."
     }
