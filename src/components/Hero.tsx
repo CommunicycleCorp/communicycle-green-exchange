@@ -27,7 +27,7 @@ export function Hero() {
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
               <p className="text-base md:text-xl text-white/90 leading-relaxed">
-                <strong className="text-white">ITAD Asset Recovery - Free Refurbishment & Resale of Your Electronics for Maximum Payout:</strong> We take your electronics and turn them into cash — with zero effort on your part. Whether you're a household or a business, we refurbish your devices to increase their value, then our specialized team resells them and returns the majority of the profits to you. It's fast, easy, and built to maximize your payout.
+                <strong className="text-white">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> We take your electronics and turn them into cash — with zero effort on your part. Whether you're a household or a business, we refurbish your devices to increase their value, then our specialized team resells them and returns the majority of the profits to you. It's fast, easy, and built to maximize your payout.
               </p>
 
               {/* Mobile-only ITAD button positioned between paragraphs */}
