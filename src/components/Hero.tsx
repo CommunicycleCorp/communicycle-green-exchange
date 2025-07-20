@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { DollarSign, Shield, Recycle, Users, MapPin, Award, Leaf } from "lucide-react";
@@ -14,6 +15,8 @@ export function Hero() {
         style={{
           backgroundImage: `url('/lovable-uploads/81c17b36-34f9-4958-ba7e-4cbcfaecefd5.png')`,
         }}
+        role="img" 
+        aria-label="Electronic devices and recycling equipment showing sustainable technology lifecycle management"
       >
         <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
       </div>

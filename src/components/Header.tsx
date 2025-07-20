@@ -1,6 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { Phone, Mail } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { MobileNav } from "./MobileNav";
 
 export function Header() {
   const navigate = useNavigate();
@@ -15,13 +17,13 @@ export function Header() {
         >
           <img 
             src="/lovable-uploads/4120fd5f-5689-4777-9715-8fbe53220acd.png" 
-            alt="Communicycle Logo" 
+            alt="Communicycle Logo - Electronic Recycling & ITAD Services" 
             className="h-20 w-auto sm:h-32 transform-gpu origin-top-left transition-transform duration-300 hover:scale-105"
           />
         </div>
         
-        {/* Right section - navigation + buttons */}
-        <div className="flex items-center space-x-8">
+        {/* Desktop navigation */}
+        <div className="hidden md:flex items-center space-x-8">
           <nav className="flex items-center space-x-5 ml-12">
             <button 
               onClick={() => {
@@ -33,6 +35,17 @@ export function Header() {
               className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
             >
               Home
+            </button>
+            <button 
+              onClick={() => {
+                navigate('/about');
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}
+              className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
+            >
+              About
             </button>
             <button 
               onClick={() => {
@@ -82,6 +95,9 @@ export function Header() {
             </Button>
           </div>
         </div>
+
+        {/* Mobile navigation */}
+        <MobileNav />
       </div>
     </header>
   );
