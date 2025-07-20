@@ -13,7 +13,7 @@ export const FAQ = () => {
     },
     {
       question: "Do you pay for old electronics?",
-      answer: "Yes! We pay competitive prices for electronics that have resale value. Our team evaluates each item and provides fair market pricing based on current demand and condition."
+      answer: "No, Communicycle does not pay for old electronics. We don't make money unless you do. Instead of lowballing you like a reseller, we partner with you to refurbish and resell your tech. When it sells, you get paid, and we take a cut — simple, transparent, and aligned."
     },
     {
       question: "How secure is your data destruction process?",
