@@ -16,7 +16,7 @@ export function Header() {
           <img 
             src="/lovable-uploads/4120fd5f-5689-4777-9715-8fbe53220acd.png" 
             alt="Communicycle Logo" 
-            className="h-20 w-auto"
+            className="h-28 w-auto"
           />
         </div>
         
