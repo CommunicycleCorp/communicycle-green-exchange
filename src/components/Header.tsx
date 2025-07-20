@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, Menu } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export function Header() {
@@ -16,14 +15,25 @@ export function Header() {
         >
           <img 
             src="/lovable-uploads/4120fd5f-5689-4777-9715-8fbe53220acd.png" 
-            alt="Communicycle Logo - Electronic Recycling & ITAD Services" 
+            alt="Communicycle Logo" 
             className="h-20 w-auto sm:h-32 transform-gpu origin-top-left transition-transform duration-300 hover:scale-105"
           />
         </div>
         
-        {/* Desktop navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        {/* Right section - navigation + buttons */}
+        <div className="flex items-center space-x-8">
           <nav className="flex items-center space-x-5 ml-12">
+            <button 
+              onClick={() => {
+                navigate('/');
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}
+              className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
+            >
+              Home
+            </button>
             <button 
               onClick={() => {
                 navigate('/');
@@ -71,13 +81,6 @@ export function Header() {
               Find Drop-off Location
             </Button>
           </div>
-        </div>
-
-        {/* Mobile menu button */}
-        <div className="md:hidden">
-          <Button variant="ghost" size="sm">
-            <Menu className="h-5 w-5" />
-          </Button>
         </div>
       </div>
     </header>
