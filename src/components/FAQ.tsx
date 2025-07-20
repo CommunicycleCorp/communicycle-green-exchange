@@ -26,6 +26,10 @@ export const FAQ = () => {
     {
       question: "How quickly can you process my electronics?",
       answer: "Our recycling processing time is 7 days from received to recycled. Our ITAD asset recovery services typically take anywhere from 7 days to multiple weeks depending on the project and quantity."
+    },
+    {
+      question: "How much do I typically get paid?",
+      answer: "Payment amounts vary significantly based on the type, condition, age, and market demand for your electronics. We evaluate each item's refurbishment potential and current market value. You'll receive a detailed assessment and profit-sharing proposal before we proceed with any work."
     }
   ];
 
