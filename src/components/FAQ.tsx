@@ -1,0 +1,63 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+export const FAQ = () => {
+  const faqs = [
+    {
+      question: "What types of electronics do you accept?",
+      answer: "We accept all types of electronics including computers, laptops, tablets, smartphones, servers, networking equipment, printers, and more. Contact us for a complete list of accepted items."
+    },
+    {
+      question: "Do you pay for old electronics?",
+      answer: "Yes! We pay competitive prices for electronics that have resale value. Our team evaluates each item and provides fair market pricing based on current demand and condition."
+    },
+    {
+      question: "How secure is your data destruction process?",
+      answer: "We follow strict data destruction protocols including physical destruction of hard drives and certified data wiping. All processes are documented and we provide certificates of destruction for compliance purposes."
+    },
+    {
+      question: "Do you provide pickup services?",
+      answer: "Yes, we offer convenient pickup services for businesses and individuals with large quantities of electronics. Contact us to schedule a pickup and get a quote."
+    },
+    {
+      question: "Are you environmentally certified?",
+      answer: "Yes, we are committed to responsible recycling practices and hold relevant environmental certifications. We ensure all materials are processed according to environmental regulations."
+    },
+    {
+      question: "How quickly can you process my electronics?",
+      answer: "Processing times vary depending on quantity and services required. Typically, we can evaluate and process items within 1-3 business days. Rush services are available for urgent needs."
+    }
+  ];
+
+  return (
+    <section className="py-16 bg-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Get answers to common questions about our electronic recycling and ITAD services
+          </p>
+        </div>
+        
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="text-left">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </div>
+    </section>
+  );
+};
