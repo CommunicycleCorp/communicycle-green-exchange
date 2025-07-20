@@ -189,7 +189,7 @@ export function HowItWorks() {
                   setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
                 }}
               >
-                <Package className="mr-2 h-5 w-5" />
+                <Recycle className="mr-2 h-5 w-5" />
                 Find Drop-off Location
               </Button>
             </div>
