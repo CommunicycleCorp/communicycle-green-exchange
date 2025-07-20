@@ -27,7 +27,7 @@ export function Hero() {
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
               <p className="text-base md:text-xl text-white/90 leading-relaxed">
-                <strong className="text-white text-xl md:text-xl lg:text-2xl">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> We take your electronics and turn them into cash. Whether you're a household or a business, we refurbish your devices, increase their value, then our specialized team handles the resale and returns the majority of the profits to you. It's fast, easy, and built to maximize your payout.
+                <strong className="text-white text-xl md:text-2xl lg:text-3xl">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> We take your electronics and turn them into cash. Whether you're a household or a business, we refurbish your devices, increase their value, then our specialized team handles the resale and returns the majority of the profits to you. It's fast, easy, and built to maximize your payout.
               </p>
 
               {/* Mobile-only ITAD button positioned between paragraphs */}
@@ -42,7 +42,7 @@ export function Hero() {
               </Button>
 
               <p className="text-base md:text-xl text-white/90 leading-relaxed">
-                <strong className="text-white text-xl md:text-xl lg:text-2xl">End-of-Life Electronic Recycling:</strong> Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.
+                <strong className="text-white text-xl md:text-2xl lg:text-3xl">End-of-Life Electronic Recycling:</strong> Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.
               </p>
             </div>
 
