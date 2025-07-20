@@ -25,7 +25,7 @@ export const FAQ = () => {
     },
     {
       question: "How quickly can you process my electronics?",
-      answer: "Processing times vary depending on quantity and services required. Typically, we can evaluate and process items within 1-3 business days. Rush services are available for urgent needs."
+      answer: "Our recycling processing time is 7 days from received to recycled. Our ITAD asset recovery services typically take anywhere from 7 days to multiple weeks depending on the project and quantity."
     }
   ];
 
