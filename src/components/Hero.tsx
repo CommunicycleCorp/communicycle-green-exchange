@@ -57,7 +57,7 @@ export function Hero() {
                 <DollarSign className="mr-2 h-5 w-5" />
                 ITAD Asset Recovery
               </Button>
-              <Button variant="eco" size="xl" className="flex-1 sm:flex-none hover-scale hover:shadow-soft h-16 px-16 text-lg" onClick={() => {
+              <Button variant="eco" size="xl" className="flex-1 sm:flex-none hover-scale hover:shadow-soft h-16 px-16 text-lg mt-4 sm:mt-0" onClick={() => {
                 navigate('/dropoff-locations');
                 setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
               }}>
