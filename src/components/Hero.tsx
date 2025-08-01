@@ -60,7 +60,7 @@ export function Hero() {
               <Button 
                 variant="hero" 
                 size="xl" 
-                className="flex-1 mt-4 sm:mt-0" 
+                className="flex-1 sm:mt-0" 
                 onClick={() => {
                   navigate('/dropoff-locations');
                   setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
