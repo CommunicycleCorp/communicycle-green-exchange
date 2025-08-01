@@ -65,7 +65,7 @@ export function Services() {
                 </div>
 
                 <p className="text-muted-foreground text-lg">
-                  Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
+                  Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
                 </p>
 
                 <div className="space-y-4">
