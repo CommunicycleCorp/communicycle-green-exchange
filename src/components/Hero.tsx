@@ -43,7 +43,7 @@ export function Hero() {
               </Button>
 
               <p className="text-sm md:text-lg lg:text-xl text-white/95 leading-relaxed font-semibold">
-                <strong className="text-white text-lg md:text-xl lg:text-2xl">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
+                <strong className="text-white text-lg md:text-xl lg:text-xl font-bold">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
               </p>
             </div>
 
