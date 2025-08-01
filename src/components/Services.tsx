@@ -71,7 +71,7 @@ export function Services() {
                 <div className="space-y-4">
                   <h4 className="font-semibold text-foreground flex items-center">
                     <Building className="h-5 w-5 text-primary mr-2" />
-                    Business Solutions
+                    Solutions
                   </h4>
                   <ul className="space-y-2 text-sm text-muted-foreground ml-7">
                     {service.businessFeatures.map((feature, i) => (
