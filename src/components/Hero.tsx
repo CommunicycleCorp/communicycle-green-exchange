@@ -8,7 +8,7 @@ export function Hero() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-[55vh] lg:min-h-[65vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[90vh] sm:min-h-[55vh] lg:min-h-[65vh] flex items-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -18,11 +18,11 @@ export function Hero() {
       >
         <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
       </div>
-      <div className="container mx-auto px-4 md:px-5 py-5 md:py-7 lg:py-10 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+      <div className="container mx-auto px-4 md:px-5 py-2 md:py-7 lg:py-10 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-3 lg:gap-8 items-center">
           {/* Left Content */}
-          <div className="space-y-2 lg:space-y-4">
-            <div className="space-y-2 lg:space-y-3">
+          <div className="space-y-1 lg:space-y-4">
+            <div className="space-y-1 lg:space-y-3">
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
@@ -47,7 +47,7 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
               <Button 
                 variant="hero" 
                 size="xl" 
@@ -67,7 +67,7 @@ export function Hero() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-2 md:gap-3 pt-2">
+            <div className="flex flex-wrap gap-2 md:gap-3 pt-1">
               <div className="flex items-center space-x-2 text-xs md:text-sm text-white/80">
                 <Shield className="h-4 w-4 md:h-5 md:w-5 text-primary" />
                 <span>Secure Data Destruction</span>
@@ -84,7 +84,7 @@ export function Hero() {
           </div>
 
           {/* Right Content - Stats Cards */}
-          <div className="grid grid-cols-2 gap-3 lg:gap-4">
+          <div className="grid grid-cols-2 gap-2 lg:gap-4">
             <Card className="p-3 lg:p-4 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
               <div className="space-y-2 lg:space-y-3">
                 <div className="h-10 w-10 lg:h-11 lg:w-11 bg-primary/10 rounded-lg flex items-center justify-center">
