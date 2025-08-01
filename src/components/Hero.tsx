@@ -22,12 +22,12 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-3 lg:gap-8 items-center">
           {/* Left Content */}
           <div className="space-y-1 lg:space-y-4">
-            <div className="space-y-1 lg:space-y-3">
+            <div className="space-y-6 lg:space-y-3">
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
-              <p className="text-base md:text-xl lg:text-2xl text-white/95 leading-relaxed font-semibold mt-6 md:mt-0">
+              <p className="text-base md:text-xl lg:text-2xl text-white/95 leading-relaxed font-semibold">
                 <strong className="text-white text-xl md:text-2xl lg:text-2xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
