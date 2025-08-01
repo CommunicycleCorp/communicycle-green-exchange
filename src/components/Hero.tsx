@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { DollarSign, Shield, Recycle, Users, MapPin, Award, Leaf } from "lucide-react";
@@ -27,7 +28,7 @@ export function Hero() {
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
               <p className="text-base md:text-xl text-white/90 leading-relaxed">
-                <strong className="text-white text-xl md:text-2xl lg:text-2xl">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> We take your electronics and turn them into cash. Whether you're a household or a business, we refurbish your devices, increase their value, then our specialized team handles the resale and returns the majority of the profits to you. It's fast, easy, and built to maximize your payout.
+                <strong className="text-white text-xl md:text-2xl lg:text-2xl">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
               {/* Mobile-only ITAD button positioned between paragraphs */}
