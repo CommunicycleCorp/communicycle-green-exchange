@@ -28,7 +28,7 @@ export function Hero() {
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
               <p className="text-sm md:text-lg lg:text-2xl text-white/95 leading-relaxed font-semibold">
-                <strong className="text-white text-xl md:text-2xl lg:text-2xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
+                <strong className="text-white text-2xl md:text-3xl lg:text-3xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
               {/* Mobile-only ITAD button positioned between paragraphs */}
