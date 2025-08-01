@@ -23,12 +23,12 @@ export function Hero() {
           {/* Left Content */}
           <div className="space-y-4 lg:space-y-8">
             <div className="space-y-2 lg:space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
-              <p className="text-lg md:text-xl text-white/95 leading-relaxed font-semibold bg-black/20 backdrop-blur-sm rounded-lg px-4 py-4 sm:px-3 sm:py-2">
-                <strong className="text-white text-2xl md:text-2xl lg:text-2xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
+              <p className="text-xl md:text-xl text-white/95 leading-relaxed font-semibold bg-black/20 backdrop-blur-sm rounded-lg px-4 py-4 sm:px-3 sm:py-2">
+                <strong className="text-white text-3xl md:text-2xl lg:text-2xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
               {/* Mobile-only ITAD button positioned between paragraphs */}
@@ -42,8 +42,8 @@ export function Hero() {
                 ITAD Asset Recovery
               </Button>
 
-              <p className="text-lg md:text-xl text-white/95 leading-relaxed font-semibold bg-black/20 backdrop-blur-sm rounded-lg px-4 py-4 sm:px-3 sm:py-2">
-                <strong className="text-white text-2xl md:text-2xl lg:text-2xl font-bold">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
+              <p className="text-xl md:text-xl text-white/95 leading-relaxed font-semibold bg-black/20 backdrop-blur-sm rounded-lg px-4 py-4 sm:px-3 sm:py-2">
+                <strong className="text-white text-3xl md:text-2xl lg:text-2xl font-bold">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
               </p>
             </div>
 
