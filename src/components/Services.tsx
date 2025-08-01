@@ -65,7 +65,7 @@ export function Services() {
                 </div>
 
                 <p className="text-muted-foreground text-lg">
-                  {service.description}
+                  Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
                 </p>
 
                 <div className="space-y-4">
