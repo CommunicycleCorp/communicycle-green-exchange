@@ -51,17 +51,22 @@ export function Hero() {
               <Button 
                 variant="hero" 
                 size="xl" 
-                className="hidden sm:flex flex-1 lg:flex-1"
+                className="hidden sm:flex flex-1"
                 onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
               >
                 <DollarSign className="mr-2 h-5 w-5" />
                 ITAD Asset Recovery
               </Button>
-              <Button variant="eco" size="xl" className="flex-1 lg:flex-1 hover-scale hover:shadow-soft h-16 px-16 text-lg mt-4 sm:mt-0" onClick={() => {
-                navigate('/dropoff-locations');
-                setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
-              }}>
-                <Recycle className="mr-2 h-6 w-6" />
+              <Button 
+                variant="hero" 
+                size="xl" 
+                className="flex-1 mt-4 sm:mt-0" 
+                onClick={() => {
+                  navigate('/dropoff-locations');
+                  setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+                }}
+              >
+                <Recycle className="mr-2 h-5 w-5" />
                 Find Drop-off Location
               </Button>
             </div>
