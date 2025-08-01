@@ -8,7 +8,7 @@ export function Hero() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-[70vh] lg:min-h-[80vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[60vh] lg:min-h-[70vh] flex items-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -18,17 +18,17 @@ export function Hero() {
       >
         <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
       </div>
-      <div className="container mx-auto px-4 md:px-6 py-8 md:py-12 lg:py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 md:px-6 py-6 md:py-8 lg:py-12 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
           {/* Left Content */}
-          <div className="space-y-4 lg:space-y-8">
-            <div className="space-y-2 lg:space-y-4">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+          <div className="space-y-3 lg:space-y-6">
+            <div className="space-y-2 lg:space-y-3">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
-              <p className="text-base md:text-xl text-white/95 leading-relaxed font-semibold">
-                <strong className="text-white text-xl md:text-2xl lg:text-2xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
+              <p className="text-sm md:text-lg text-white/95 leading-relaxed font-semibold">
+                <strong className="text-white text-lg md:text-xl lg:text-xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
               {/* Mobile-only ITAD button positioned between paragraphs */}
@@ -42,8 +42,8 @@ export function Hero() {
                 ITAD Asset Recovery
               </Button>
 
-              <p className="text-base md:text-xl text-white/95 leading-relaxed font-semibold">
-                <strong className="text-white text-xl md:text-2xl lg:text-2xl">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
+              <p className="text-sm md:text-lg text-white/95 leading-relaxed font-semibold">
+                <strong className="text-white text-lg md:text-xl lg:text-xl">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
               </p>
             </div>
 
@@ -67,7 +67,7 @@ export function Hero() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-4 md:gap-6 pt-4">
+            <div className="flex flex-wrap gap-3 md:gap-4 pt-3">
               <div className="flex items-center space-x-2 text-xs md:text-sm text-white/80">
                 <Shield className="h-4 w-4 md:h-5 md:w-5 text-primary" />
                 <span>Secure Data Destruction</span>
@@ -84,51 +84,51 @@ export function Hero() {
           </div>
 
           {/* Right Content - Stats Cards */}
-          <div className="grid grid-cols-2 gap-6">
-            <Card className="p-6 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
-              <div className="space-y-3">
-                <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Leaf className="h-6 w-6 text-primary" />
+          <div className="grid grid-cols-2 gap-4 lg:gap-5">
+            <Card className="p-4 lg:p-5 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
+              <div className="space-y-2 lg:space-y-3">
+                <div className="h-10 w-10 lg:h-11 lg:w-11 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Leaf className="h-5 w-5 lg:h-6 lg:w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg sm:text-2xl font-bold text-foreground">Sustainable.</h3>
-                  <p className="text-sm text-muted-foreground">Transparent. Rewarding.</p>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold text-foreground">Sustainable.</h3>
+                  <p className="text-xs lg:text-sm text-muted-foreground">Transparent. Rewarding.</p>
                 </div>
               </div>
             </Card>
 
-            <Card className="p-6 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
-              <div className="space-y-3">
-                <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Recycle className="h-6 w-6 text-primary" />
+            <Card className="p-4 lg:p-5 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
+              <div className="space-y-2 lg:space-y-3">
+                <div className="h-10 w-10 lg:h-11 lg:w-11 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Recycle className="h-5 w-5 lg:h-6 lg:w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg sm:text-2xl font-bold text-foreground">100%</h3>
-                  <p className="text-sm text-muted-foreground">Ethically Recycled</p>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold text-foreground">100%</h3>
+                  <p className="text-xs lg:text-sm text-muted-foreground">Ethically Recycled</p>
                 </div>
               </div>
             </Card>
 
-            <Card className="p-6 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
-              <div className="space-y-3">
-                <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-primary" />
+            <Card className="p-4 lg:p-5 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
+              <div className="space-y-2 lg:space-y-3">
+                <div className="h-10 w-10 lg:h-11 lg:w-11 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <MapPin className="h-5 w-5 lg:h-6 lg:w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg sm:text-2xl font-bold text-foreground">100%</h3>
-                  <p className="text-sm text-muted-foreground">Canadian Owned & Recycled</p>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold text-foreground">100%</h3>
+                  <p className="text-xs lg:text-sm text-muted-foreground">Canadian Owned & Recycled</p>
                 </div>
               </div>
             </Card>
 
-            <Card className="p-6 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
-              <div className="space-y-3">
-                <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Shield className="h-6 w-6 text-primary" />
+            <Card className="p-4 lg:p-5 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
+              <div className="space-y-2 lg:space-y-3">
+                <div className="h-10 w-10 lg:h-11 lg:w-11 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Shield className="h-5 w-5 lg:h-6 lg:w-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg sm:text-2xl font-bold text-foreground">100%</h3>
-                  <p className="text-sm text-muted-foreground">Data Security</p>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold text-foreground">100%</h3>
+                  <p className="text-xs lg:text-sm text-muted-foreground">Data Security</p>
                 </div>
               </div>
             </Card>

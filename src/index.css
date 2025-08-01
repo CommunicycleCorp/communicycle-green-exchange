@@ -113,4 +113,17 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Scale down the entire site to simulate 80% zoom on laptops */
+  @media (min-width: 768px) {
+    html {
+      font-size: 14px; /* Down from default 16px = 87.5% scaling */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      font-size: 13px; /* Further scaling for larger screens = 81.25% */
+    }
+  }
 }
