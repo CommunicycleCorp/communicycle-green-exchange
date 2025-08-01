@@ -27,8 +27,8 @@ export function Hero() {
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
-              <p className="text-lg sm:text-base md:text-xl text-white/95 leading-relaxed font-semibold bg-black/20 backdrop-blur-sm rounded-lg px-4 py-4 sm:px-3 sm:py-2">
-                <strong className="text-white text-xl sm:text-xl md:text-2xl lg:text-2xl font-bold">Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.</strong>
+              <p className="text-base md:text-xl text-white/95 leading-relaxed font-semibold">
+                <strong className="text-white text-xl md:text-2xl lg:text-2xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
               {/* Mobile-only ITAD button positioned between paragraphs */}
@@ -42,8 +42,8 @@ export function Hero() {
                 ITAD Asset Recovery
               </Button>
 
-              <p className="text-lg sm:text-base md:text-xl text-white/95 leading-relaxed font-semibold bg-black/20 backdrop-blur-sm rounded-lg px-4 py-4 sm:px-3 sm:py-2">
-                <strong className="text-white text-xl sm:text-xl md:text-2xl lg:text-2xl font-bold">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
+              <p className="text-base md:text-xl text-white/95 leading-relaxed font-semibold">
+                <strong className="text-white text-xl md:text-2xl lg:text-2xl">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
               </p>
             </div>
 
@@ -51,13 +51,13 @@ export function Hero() {
               <Button 
                 variant="hero" 
                 size="xl" 
-                className="hidden sm:flex w-full sm:w-auto sm:flex-1 text-base px-8 py-4 h-14 sm:h-11"
+                className="hidden sm:flex flex-1 sm:flex-none"
                 onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
               >
                 <DollarSign className="mr-2 h-5 w-5" />
                 ITAD Asset Recovery
               </Button>
-              <Button variant="eco" size="xl" className="w-full sm:w-auto sm:flex-1 text-base px-8 py-4 h-14 sm:h-11" onClick={() => {
+              <Button variant="eco" size="xl" className="flex-1 sm:flex-none" onClick={() => {
                 navigate('/dropoff-locations');
                 setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
               }}>
