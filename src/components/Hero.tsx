@@ -8,7 +8,7 @@ export function Hero() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-[60vh] lg:min-h-[70vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[55vh] lg:min-h-[65vh] flex items-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -18,10 +18,10 @@ export function Hero() {
       >
         <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
       </div>
-      <div className="container mx-auto px-4 md:px-6 py-6 md:py-8 lg:py-12 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+      <div className="container mx-auto px-4 md:px-5 py-5 md:py-7 lg:py-10 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
           {/* Left Content */}
-          <div className="space-y-3 lg:space-y-6">
+          <div className="space-y-2 lg:space-y-4">
             <div className="space-y-2 lg:space-y-3">
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Complete Electronic
@@ -67,7 +67,7 @@ export function Hero() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-3 md:gap-4 pt-3">
+            <div className="flex flex-wrap gap-2 md:gap-3 pt-2">
               <div className="flex items-center space-x-2 text-xs md:text-sm text-white/80">
                 <Shield className="h-4 w-4 md:h-5 md:w-5 text-primary" />
                 <span>Secure Data Destruction</span>
@@ -84,8 +84,8 @@ export function Hero() {
           </div>
 
           {/* Right Content - Stats Cards */}
-          <div className="grid grid-cols-2 gap-4 lg:gap-5">
-            <Card className="p-4 lg:p-5 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
+          <div className="grid grid-cols-2 gap-3 lg:gap-4">
+            <Card className="p-3 lg:p-4 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
               <div className="space-y-2 lg:space-y-3">
                 <div className="h-10 w-10 lg:h-11 lg:w-11 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Leaf className="h-5 w-5 lg:h-6 lg:w-6 text-primary" />
@@ -97,7 +97,7 @@ export function Hero() {
               </div>
             </Card>
 
-            <Card className="p-4 lg:p-5 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
+            <Card className="p-3 lg:p-4 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
               <div className="space-y-2 lg:space-y-3">
                 <div className="h-10 w-10 lg:h-11 lg:w-11 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Recycle className="h-5 w-5 lg:h-6 lg:w-6 text-primary" />
@@ -109,7 +109,7 @@ export function Hero() {
               </div>
             </Card>
 
-            <Card className="p-4 lg:p-5 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
+            <Card className="p-3 lg:p-4 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
               <div className="space-y-2 lg:space-y-3">
                 <div className="h-10 w-10 lg:h-11 lg:w-11 bg-primary/10 rounded-lg flex items-center justify-center">
                   <MapPin className="h-5 w-5 lg:h-6 lg:w-6 text-primary" />
@@ -121,7 +121,7 @@ export function Hero() {
               </div>
             </Card>
 
-            <Card className="p-4 lg:p-5 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
+            <Card className="p-3 lg:p-4 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300">
               <div className="space-y-2 lg:space-y-3">
                 <div className="h-10 w-10 lg:h-11 lg:w-11 bg-primary/10 rounded-lg flex items-center justify-center">
                   <Shield className="h-5 w-5 lg:h-6 lg:w-6 text-primary" />
