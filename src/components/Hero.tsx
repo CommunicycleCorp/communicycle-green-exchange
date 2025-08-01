@@ -27,7 +27,7 @@ export function Hero() {
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
-              <p className="text-base md:text-xl lg:text-2xl text-white/95 leading-relaxed font-semibold">
+              <p className="text-base md:text-xl lg:text-2xl text-white/95 leading-relaxed font-semibold mt-4 md:mt-0">
                 <strong className="text-white text-xl md:text-2xl lg:text-3xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
