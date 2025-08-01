@@ -27,8 +27,8 @@ export function Hero() {
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
-              <p className="text-2xl sm:text-base md:text-xl text-white/95 leading-relaxed font-semibold bg-black/20 backdrop-blur-sm rounded-lg px-4 py-4 sm:px-3 sm:py-2">
-                <strong className="text-white text-3xl sm:text-xl md:text-2xl lg:text-2xl font-bold">Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.</strong>
+              <p className="text-base sm:text-base md:text-xl text-white/95 leading-relaxed font-semibold bg-black/20 backdrop-blur-sm rounded-lg px-4 py-4 sm:px-3 sm:py-2">
+                <strong className="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold">Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.</strong>
               </p>
 
               {/* Mobile-only ITAD button positioned between paragraphs */}
@@ -42,8 +42,8 @@ export function Hero() {
                 ITAD Asset Recovery
               </Button>
 
-              <p className="text-2xl sm:text-base md:text-xl text-white/95 leading-relaxed font-semibold bg-black/20 backdrop-blur-sm rounded-lg px-4 py-4 sm:px-3 sm:py-2">
-                <strong className="text-white text-3xl sm:text-xl md:text-2xl lg:text-2xl font-bold">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
+              <p className="text-base sm:text-base md:text-xl text-white/95 leading-relaxed font-semibold bg-black/20 backdrop-blur-sm rounded-lg px-4 py-4 sm:px-3 sm:py-2">
+                <strong className="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl font-semibold">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
               </p>
             </div>
 
