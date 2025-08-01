@@ -31,17 +31,6 @@ export function Hero() {
                 <strong className="text-white text-xl md:text-2xl lg:text-3xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
-              {/* Mobile-only ITAD button positioned between paragraphs */}
-              <Button 
-                variant="hero" 
-                size="xl" 
-                className="sm:hidden flex-1"
-                onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
-              >
-                <DollarSign className="mr-2 h-5 w-5" />
-                ITAD Asset Recovery
-              </Button>
-
               <p className="text-base md:text-xl lg:text-2xl text-white/95 leading-relaxed font-semibold">
                 <strong className="text-white text-xl md:text-2xl lg:text-3xl font-bold">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and securely.
               </p>
@@ -51,7 +40,7 @@ export function Hero() {
               <Button 
                 variant="hero" 
                 size="xl" 
-                className="hidden sm:flex flex-1"
+                className="flex-1"
                 onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
               >
                 <DollarSign className="mr-2 h-5 w-5" />
