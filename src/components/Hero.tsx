@@ -16,14 +16,14 @@ export function Hero() {
           backgroundImage: `url('/lovable-uploads/81c17b36-34f9-4958-ba7e-4cbcfaecefd5.png')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/60 md:bg-black/50"></div>
       </div>
       <div className="container mx-auto px-4 md:px-5 py-5 md:py-7 lg:py-10 relative z-10">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
           {/* Left Content */}
           <div className="space-y-2 lg:space-y-4">
             <div className="space-y-2 lg:space-y-3">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-black text-white leading-tight">
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
