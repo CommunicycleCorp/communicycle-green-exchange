@@ -16,7 +16,7 @@ export function Header() {
           <img 
             src="/lovable-uploads/4120fd5f-5689-4777-9715-8fbe53220acd.png" 
             alt="Communicycle Logo" 
-            className="h-20 w-auto sm:h-32 transform-gpu origin-top-left transition-transform duration-300 hover:scale-105"
+            className="h-24 w-auto sm:h-40 transform-gpu origin-top-left transition-transform duration-300 hover:scale-105"
           />
         </div>
         
@@ -30,7 +30,7 @@ export function Header() {
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }, 100);
               }}
-              className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
+              className="text-sm sm:text-base md:text-lg text-foreground/80 hover:text-foreground transition-colors"
             >
               Home
             </button>
@@ -41,7 +41,7 @@ export function Header() {
                   document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
               }}
-              className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
+              className="text-sm sm:text-base md:text-lg text-foreground/80 hover:text-foreground transition-colors"
             >
               Solutions
             </button>
@@ -52,7 +52,7 @@ export function Header() {
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
               }}
-              className="text-xs sm:text-sm md:text-base text-foreground/80 hover:text-foreground transition-colors"
+              className="text-sm sm:text-base md:text-lg text-foreground/80 hover:text-foreground transition-colors"
             >
               Contact
             </button>
