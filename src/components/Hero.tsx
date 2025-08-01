@@ -16,19 +16,19 @@ export function Hero() {
           backgroundImage: `url('/lovable-uploads/81c17b36-34f9-4958-ba7e-4cbcfaecefd5.png')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/60 md:bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
       </div>
       <div className="container mx-auto px-4 md:px-5 py-5 md:py-7 lg:py-10 relative z-10">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
           {/* Left Content */}
           <div className="space-y-2 lg:space-y-4">
             <div className="space-y-2 lg:space-y-3">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-black text-white leading-tight">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
               <p className="text-sm md:text-lg text-white/95 leading-relaxed font-semibold">
-                <strong className="text-white text-lg md:text-xl lg:text-xl font-black">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
+                <strong className="text-white text-lg md:text-xl lg:text-xl font-bold">Turn Old Electronics Into Cash with ITAD Asset Recovery:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
               {/* Mobile-only ITAD button positioned between paragraphs */}
