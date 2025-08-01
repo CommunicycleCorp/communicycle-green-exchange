@@ -110,6 +110,10 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    font-size: 80%; /* Scale everything down to achieve 80% zoom effect */
+  }
+
   body {
     @apply bg-background text-foreground;
   }
