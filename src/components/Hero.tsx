@@ -40,7 +40,6 @@ export function Hero() {
               <Button 
                 variant="hero" 
                 size="xl" 
-                className="flex-1"
                 onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
               >
                 <DollarSign className="mr-2 h-5 w-5" />
@@ -49,7 +48,6 @@ export function Hero() {
               <Button 
                 variant="hero" 
                 size="xl" 
-                className="flex-1 sm:mt-0" 
                 onClick={() => {
                   navigate('/dropoff-locations');
                   setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
