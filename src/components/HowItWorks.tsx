@@ -9,7 +9,7 @@ export function HowItWorks() {
   const itadSteps = [
     {
       icon: FileText,
-      title: "ITAD Intake Form",
+      title: "Get Paid Big Form",
       description: "Fill our form so we can ensure the best process and evaluation for your device to maximize value."
     },
     {
@@ -87,7 +87,7 @@ export function HowItWorks() {
                       <p className="text-sm text-muted-foreground">
                         {step.description}
                       </p>
-                      {step.title === "ITAD Intake Form" && (
+                      {step.title === "Get Paid Big Form" && (
                         <Button 
                           variant="outline" 
                           size="sm" 
