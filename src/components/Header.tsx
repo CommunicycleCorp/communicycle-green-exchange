@@ -72,7 +72,7 @@ export function Header() {
           
           <div className="flex items-center space-x-2">
             <Button variant="hero" size="sm" className="hidden sm:inline-flex text-xs" onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}>
-              Get Asset Valuation
+              Get Paid Big Now
             </Button>
             <Button variant="eco" size="sm" onClick={() => {
               navigate('/dropoff-locations');

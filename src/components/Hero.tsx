@@ -43,7 +43,7 @@ export function Hero() {
                 onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
               >
                 <DollarSign className="mr-2 h-5 w-5" />
-                ITAD Asset Recovery
+                Get Paid Big Now
               </Button>
               <Button 
                 variant="hero" 
