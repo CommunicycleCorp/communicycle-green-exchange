@@ -44,7 +44,7 @@ export function Hero() {
               </div>
 
               <p className="text-base md:text-xl lg:text-2xl text-white/95 leading-relaxed font-semibold">
-                <strong className="text-white text-xl md:text-2xl lg:text-3xl font-bold">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and securely.
+                <strong className="text-white text-xl md:text-2xl lg:text-3xl font-bold">End-of-Life Electronic Recycling - If your device can't be sold -</strong> Recycle your end-of-life electronics responsibly and securely.
               </p>
 
               <div className="mb-4">
