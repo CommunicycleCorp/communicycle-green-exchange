@@ -51,6 +51,7 @@ export function Hero() {
                 <Button 
                   variant="hero" 
                   size="xl" 
+                  className="text-2xl"
                   onClick={() => {
                     navigate('/dropoff-locations');
                     setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
