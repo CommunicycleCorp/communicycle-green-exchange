@@ -28,7 +28,7 @@ export function Hero() {
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
               <p className="text-xl md:text-2xl lg:text-3xl text-white font-bold leading-tight mt-4 md:mt-0 drop-shadow-lg">
-                Get Paid Big for Your Electronics - Get Paid Big for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
+                <span className="hidden md:inline">Get Paid Big for Your Electronics - </span>Get Paid Big for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
               <div className="mb-4">
