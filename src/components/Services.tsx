@@ -65,7 +65,7 @@ export function Services() {
                 </div>
 
                 <p className="text-muted-foreground text-lg">
-                  Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
+                  We guarantee the highest payout due to our model.
                 </p>
 
                 <div className="space-y-4">
