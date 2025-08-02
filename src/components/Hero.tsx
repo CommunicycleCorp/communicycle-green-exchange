@@ -26,7 +26,7 @@ export function Hero() {
 
               <div className="mb-4">
                 <Button variant="hero" size="xl" onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')} className="text-2xl lg:h-16 lg:px-16 lg:text-4xl">
-                  <DollarSign className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
+                  <DollarSign className="mr-2 h-6 w-6 lg:h-8 lg:w-8" />
                   Get Paid Big Now
                 </Button>
               </div>
