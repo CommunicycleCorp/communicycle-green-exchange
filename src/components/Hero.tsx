@@ -27,7 +27,7 @@ export function Hero() {
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white font-medium leading-tight mt-4 md:mt-0 drop-shadow-lg">
+              <p className="text-xl md:text-3xl lg:text-4xl text-white font-medium leading-tight mt-4 md:mt-0 drop-shadow-lg">
                 <span className="hidden md:inline">Get Paid Big for Your Electronics - </span>Get Paid Big for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
