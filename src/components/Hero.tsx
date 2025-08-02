@@ -16,7 +16,7 @@ export function Hero() {
           backgroundImage: `url('/lovable-uploads/81c17b36-34f9-4958-ba7e-4cbcfaecefd5.png')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/50 md:bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
       </div>
       <div className="container mx-auto px-4 md:px-5 py-2 md:py-7 lg:py-10 relative z-10">
         <div className="grid lg:grid-cols-2 gap-3 lg:gap-8 items-center">
