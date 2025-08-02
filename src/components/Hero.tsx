@@ -35,7 +35,7 @@ export function Hero() {
                 <Button 
                   variant="hero" 
                   size="xl" 
-                  className="text-xl"
+                  className="text-2xl"
                   onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
                 >
                   <DollarSign className="mr-2 h-5 w-5" />
