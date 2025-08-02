@@ -179,7 +179,7 @@ export function HowItWorks() {
                 onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
               >
                 <DollarSign className="mr-2 h-5 w-5" />
-                Get Asset Valuation
+                Get Paid Big Now
               </Button>
               <Button 
                 variant="eco" 
