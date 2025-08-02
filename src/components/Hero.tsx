@@ -35,10 +35,10 @@ export function Hero() {
                 <Button 
                   variant="hero" 
                   size="xl" 
-                  className="text-2xl"
+                  className="text-2xl lg:text-3xl lg:h-16 lg:px-16"
                   onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
                 >
-                  <DollarSign className="mr-2 h-5 w-5" />
+                  <DollarSign className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
                   Get Paid Big Now
                 </Button>
               </div>
@@ -51,13 +51,13 @@ export function Hero() {
                 <Button 
                   variant="hero" 
                   size="xl" 
-                  className="text-2xl"
+                  className="text-2xl lg:text-3xl lg:h-16 lg:px-16"
                   onClick={() => {
                     navigate('/dropoff-locations');
                     setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
                   }}
                 >
-                  <Recycle className="mr-2 h-5 w-5" />
+                  <Recycle className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
                   Find Drop-off Location
                 </Button>
               </div>
