@@ -1,21 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { DollarSign, Shield, Recycle, Users, MapPin, Award, Leaf } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 export function Hero() {
   const navigate = useNavigate();
-
-  return (
-    <section className="relative min-h-[90vh] sm:min-h-[55vh] lg:min-h-[65vh] flex items-center overflow-hidden">
+  return <section className="relative min-h-[90vh] sm:min-h-[55vh] lg:min-h-[65vh] flex items-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/lovable-uploads/81c17b36-34f9-4958-ba7e-4cbcfaecefd5.png')`,
-        }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url('/lovable-uploads/81c17b36-34f9-4958-ba7e-4cbcfaecefd5.png')`
+    }}>
         <div className="absolute inset-0 bg-black/80"></div>
       </div>
       <div className="container mx-auto px-4 md:px-5 py-2 md:py-7 lg:py-10 relative z-10">
@@ -32,12 +25,7 @@ export function Hero() {
               </p>
 
               <div className="mb-4">
-                <Button 
-                  variant="hero" 
-                  size="xl" 
-                  className="text-2xl lg:text-3xl lg:h-16 lg:px-16"
-                  onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
-                >
+                <Button variant="hero" size="xl" onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')} className="text-2xl lg:h-16 lg:px-16 lg:text-4xl">
                   <DollarSign className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
                   Get Paid Big Now
                 </Button>
@@ -48,15 +36,13 @@ export function Hero() {
               </p>
 
               <div className="mb-4">
-                <Button 
-                  variant="hero" 
-                  size="xl" 
-                  className="text-2xl lg:text-3xl lg:h-16 lg:px-16"
-                  onClick={() => {
-                    navigate('/dropoff-locations');
-                    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
-                  }}
-                >
+                <Button variant="hero" size="xl" onClick={() => {
+                navigate('/dropoff-locations');
+                setTimeout(() => window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+                }), 100);
+              }} className="text-2xl lg:h-16 lg:px-16 lg:text-4xl">
                   <Recycle className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
                   Find Drop-off Location
                 </Button>
@@ -132,6 +118,5 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
