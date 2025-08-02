@@ -42,7 +42,7 @@ export function Hero() {
                   top: 0,
                   behavior: 'smooth'
                 }), 100);
-              }} className="text-2xl lg:h-16 lg:px-16 lg:text-4xl">
+              }} className="text-xl lg:h-16 lg:px-16 lg:text-3xl">
                   <Recycle className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
                   Find Drop-off Location
                 </Button>
