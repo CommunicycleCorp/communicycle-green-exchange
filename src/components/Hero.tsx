@@ -31,31 +31,34 @@ export function Hero() {
                 <strong className="text-white text-xl md:text-2xl lg:text-3xl font-bold">Get Paid Big for Your Electronics:</strong> Get Paid for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
+              <div className="mb-4">
+                <Button 
+                  variant="hero" 
+                  size="xl" 
+                  onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
+                >
+                  <DollarSign className="mr-2 h-5 w-5" />
+                  Get Paid Big Now
+                </Button>
+              </div>
+
               <p className="text-base md:text-xl lg:text-2xl text-white/95 leading-relaxed font-semibold">
                 <strong className="text-white text-xl md:text-2xl lg:text-3xl font-bold">End-of-Life Electronic Recycling:</strong> Find the nearest Communicycle bin. Recycle your end-of-life electronics responsibly and securely.
               </p>
-            </div>
 
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-              <Button 
-                variant="hero" 
-                size="xl" 
-                onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
-              >
-                <DollarSign className="mr-2 h-5 w-5" />
-                Get Paid Big Now
-              </Button>
-              <Button 
-                variant="hero" 
-                size="xl" 
-                onClick={() => {
-                  navigate('/dropoff-locations');
-                  setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
-                }}
-              >
-                <Recycle className="mr-2 h-5 w-5" />
-                Find Drop-off Location
-              </Button>
+              <div className="mb-4">
+                <Button 
+                  variant="hero" 
+                  size="xl" 
+                  onClick={() => {
+                    navigate('/dropoff-locations');
+                    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+                  }}
+                >
+                  <Recycle className="mr-2 h-5 w-5" />
+                  Find Drop-off Location
+                </Button>
+              </div>
             </div>
 
             {/* Trust Indicators */}
