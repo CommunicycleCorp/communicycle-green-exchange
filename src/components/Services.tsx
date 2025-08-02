@@ -9,7 +9,7 @@ export function Services() {
   const mainServices = [
     {
       icon: DollarSign,
-      title: "ITAD Asset Recovery: Maximum Payout for Electronics",
+      title: "Get Paid Big: Maximum Payout for Electronics",
       subtitle: "IT Asset Disposition & Refurbishment",
       description: "We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.",
       businessFeatures: ["Corporate equipment liquidation", "Data center decommissioning", "Office technology upgrades", "Fleet device management"],
