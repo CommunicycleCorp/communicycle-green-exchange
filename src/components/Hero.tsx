@@ -23,7 +23,7 @@ export function Hero() {
           {/* Left Content */}
           <div className="space-y-1 lg:space-y-4">
             <div className="space-y-6 lg:space-y-3">
-              <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white leading-tight md:-mt-3 md:-ml-2 lg:-mt-4 lg:-ml-3">
+              <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white leading-tight md:-mt-3 md:-ml-2 lg:-mt-4 lg:-ml-6">
                 Complete Electronic
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
