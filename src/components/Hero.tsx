@@ -59,7 +59,7 @@ export function Hero() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-2 md:gap-3 pt-4 md:pt-1">
+            <div className="hidden md:flex flex-wrap gap-2 md:gap-3 pt-4 md:pt-1">
               <div className="flex items-center space-x-2 text-xs md:text-sm text-white/80">
                 <Shield className="h-4 w-4 md:h-5 md:w-5 text-primary" />
                 <span>Secure Data Destruction</span>
