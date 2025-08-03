@@ -6,29 +6,6 @@ import { useNavigate } from "react-router-dom";
 export function HowItWorks() {
   const navigate = useNavigate();
   
-  const itadSteps = [
-    {
-      icon: FileText,
-      title: "ITAD Intake Form",
-      description: "Fill our form so we can ensure the best process and evaluation for your device to maximize value."
-    },
-    {
-      icon: Mail,
-      title: "Pickup or Mail Service",
-      description: "Convenient pickup scheduling or secure shipping labels for your equipment delivery"
-    },
-    {
-      icon: RotateCcw,
-      title: "Refurbishment",
-      description: "Certified data wiping, repairs, and refurbishment process to restore devices to like-new condition"
-    },
-    {
-      icon: DollarSign,
-      title: "Payment",
-      description: "Fast payment for resaleable equipment at fair market value with transparent pricing"
-    }
-  ];
-
   const recyclingSteps = [
     {
       icon: Truck,
@@ -71,42 +48,102 @@ export function HowItWorks() {
           
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {itadSteps.map((step, index) => (
-                <div key={index} className="relative">
-                  <Card className="p-6 text-center bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 h-full border-l-4 border-primary">
-                    <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                      <step.icon className="h-8 w-8 text-primary" />
-                    </div>
-                    <div className="absolute -top-3 -left-3 h-8 w-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
-                      {index + 1}
-                    </div>
-                    <div className="space-y-3">
-                      <h4 className="text-lg font-semibold text-foreground">
-                        Get Paid BIG Form - 2 minutes
-                      </h4>
-                      <p className="text-sm text-muted-foreground">
-                        {step.description}
-                      </p>
-                      {step.title === "ITAD Intake Form" && (
-                        <Button 
-                          variant="outline" 
-                          size="sm" 
-                          className="mt-3"
-                          onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
-                        >
-                          Fill Our Form
-                        </Button>
-                      )}
-                    </div>
-                  </Card>
-                  
-                  {index < itadSteps.length - 1 && (
-                    <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                      <ArrowRight className="h-6 w-6 text-primary" />
-                    </div>
-                  )}
+              {/* Step 1 */}
+              <div className="relative">
+                <Card className="p-6 text-center bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 h-full border-l-4 border-primary">
+                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <FileText className="h-8 w-8 text-primary" />
+                  </div>
+                  <div className="absolute -top-3 -left-3 h-8 w-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                    1
+                  </div>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-foreground">
+                      Get Paid BIG Form - 2 minutes
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Fill our form so we can ensure the best process and evaluation for your device to maximize value.
+                    </p>
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="mt-3"
+                      onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
+                    >
+                      Fill Our Form
+                    </Button>
+                  </div>
+                </Card>
+                <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                  <ArrowRight className="h-6 w-6 text-primary" />
                 </div>
-              ))}
+              </div>
+
+              {/* Step 2 */}
+              <div className="relative">
+                <Card className="p-6 text-center bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 h-full border-l-4 border-primary">
+                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <Mail className="h-8 w-8 text-primary" />
+                  </div>
+                  <div className="absolute -top-3 -left-3 h-8 w-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                    2
+                  </div>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-foreground">
+                      Pickup or Mail Service
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Convenient pickup scheduling or secure shipping labels for your equipment delivery
+                    </p>
+                  </div>
+                </Card>
+                <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                  <ArrowRight className="h-6 w-6 text-primary" />
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative">
+                <Card className="p-6 text-center bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 h-full border-l-4 border-primary">
+                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <RotateCcw className="h-8 w-8 text-primary" />
+                  </div>
+                  <div className="absolute -top-3 -left-3 h-8 w-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                    3
+                  </div>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-foreground">
+                      Refurbishment
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Certified data wiping, repairs, and refurbishment process to restore devices to like-new condition
+                    </p>
+                  </div>
+                </Card>
+                <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                  <ArrowRight className="h-6 w-6 text-primary" />
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="relative">
+                <Card className="p-6 text-center bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 h-full border-l-4 border-primary">
+                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <DollarSign className="h-8 w-8 text-primary" />
+                  </div>
+                  <div className="absolute -top-3 -left-3 h-8 w-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                    4
+                  </div>
+                  <div className="space-y-3">
+                    <h4 className="text-lg font-semibold text-foreground">
+                      Payment
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Fast payment for resaleable equipment at fair market value with transparent pricing
+                    </p>
+                  </div>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
