@@ -82,7 +82,7 @@ export function HowItWorks() {
                     </div>
                     <div className="space-y-3">
                       <h4 className="text-lg font-semibold text-foreground">
-                        {step.title}
+                        Get Paid BIG Form - 2 minutes
                       </h4>
                       <p className="text-sm text-muted-foreground">
                         {step.description}
