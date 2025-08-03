@@ -59,7 +59,7 @@ export function Services() {
                     <service.icon className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-3xl font-bold text-foreground">Get Paid BIG: Maximum Payout for Electronics</h3>
+                    <h3 className="text-3xl font-bold text-foreground">{service.title}</h3>
                     <p className="text-primary font-medium">{service.subtitle}</p>
                   </div>
                 </div>
