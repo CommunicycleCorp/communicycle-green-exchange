@@ -6,31 +6,6 @@ import { useNavigate } from "react-router-dom";
 export function Services() {
   const navigate = useNavigate();
   
-  const mainServices = [
-    {
-      icon: DollarSign,
-      title: "ITAD Asset Recovery: Maximum Payout for Electronics",
-      subtitle: "IT Asset Disposition & Refurbishment",
-      description: "We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.",
-      businessFeatures: ["Corporate equipment liquidation", "Data center decommissioning", "Office technology upgrades", "Fleet device management"],
-      residentialFeatures: ["Individual device evaluation", "Laptop, Tablet, Phone, Computer etc", "Consumer electronics", "Office Equipment"],
-      cta: "Get Paid Big Now",
-      borderColor: "border-primary",
-      bgColor: "bg-primary/10"
-    },
-    {
-      icon: Recycle,
-      title: "End-of-Life Recycling",
-      subtitle: "Public Drop-off Network Operations",
-      description: "Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.",
-      businessFeatures: ["Convenient neighborhood locations", "No appointment necessary", "All electronics accepted", "Certified destruction processes"],
-      residentialFeatures: ["100% landfill diversion", "Responsible material recovery", "Certified data destruction", "Environmental compliance"],
-      cta: "Find Drop-off Location",
-      borderColor: "border-secondary",
-      bgColor: "bg-secondary/10"
-    }
-  ];
-
   const devices = [
     { icon: Laptop, name: "Laptops & Computers" },
     { icon: Smartphone, name: "Phones & Tablets" },
@@ -51,63 +26,112 @@ export function Services() {
 
         {/* Main Service Divisions */}
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
-          {mainServices.map((service, index) => (
-            <Card key={index} className={`p-4 sm:p-6 lg:p-10 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 border-l-4 ${service.borderColor}`}>
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className={`h-16 w-16 ${service.bgColor} rounded-lg flex items-center justify-center`}>
-                    <service.icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-3xl font-bold text-foreground">{service.title}</h3>
-                    <p className="text-primary font-medium">{service.subtitle}</p>
-                  </div>
+          {/* ITAD Asset Recovery Service */}
+          <Card className="p-4 sm:p-6 lg:p-10 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 border-l-4 border-primary">
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="h-16 w-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <DollarSign className="h-8 w-8 text-primary" />
                 </div>
-
-                <p className="text-muted-foreground text-lg">
-                  {service.description}
-                </p>
-
-                <div className="space-y-4">
-                  <h4 className="font-semibold text-foreground flex items-center">
-                    <Building className="h-5 w-5 text-primary mr-2" />
-                    Solutions
-                  </h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground ml-7">
-                    {service.businessFeatures.map((feature, i) => (
-                      <li key={i}>• {feature}</li>
-                    ))}
-                  </ul>
-
-                  <h4 className="font-semibold text-foreground flex items-center">
-                    <Users className="h-5 w-5 text-primary mr-2" />
-                    Device Management
-                  </h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground ml-7">
-                    {service.residentialFeatures.map((feature, i) => (
-                      <li key={i}>• {feature}</li>
-                    ))}
-                  </ul>
+                <div>
+                  <h3 className="text-3xl font-bold text-foreground">ITAD Asset Recovery: Maximum Payout for Electronics</h3>
+                  <p className="text-primary font-medium">IT Asset Disposition & Refurbishment</p>
                 </div>
-
-                <Button 
-                  variant={index === 0 ? "hero" : "eco"} 
-                  className="w-full group"
-                  onClick={() => {
-                    if (index === 0) {
-                      window.open('https://tally.so/r/w40aVO', '_blank');
-                    } else {
-                      navigate('/dropoff-locations');
-                      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
-                    }
-                  }}
-                >
-                  {service.cta}
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
               </div>
-            </Card>
-          ))}
+
+              <p className="text-muted-foreground text-lg">
+                We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.
+              </p>
+
+              <div className="space-y-4">
+                <h4 className="font-semibold text-foreground flex items-center">
+                  <Building className="h-5 w-5 text-primary mr-2" />
+                  Solutions
+                </h4>
+                <ul className="space-y-2 text-sm text-muted-foreground ml-7">
+                  <li>• Corporate equipment liquidation</li>
+                  <li>• Data center decommissioning</li>
+                  <li>• Office technology upgrades</li>
+                  <li>• Fleet device management</li>
+                </ul>
+
+                <h4 className="font-semibold text-foreground flex items-center">
+                  <Users className="h-5 w-5 text-primary mr-2" />
+                  Device Management
+                </h4>
+                <ul className="space-y-2 text-sm text-muted-foreground ml-7">
+                  <li>• Individual device evaluation</li>
+                  <li>• Laptop, Tablet, Phone, Computer etc</li>
+                  <li>• Consumer electronics</li>
+                  <li>• Office Equipment</li>
+                </ul>
+              </div>
+
+              <Button 
+                variant="hero" 
+                className="w-full group"
+                onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
+              >
+                Get Paid Big Now
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+          </Card>
+
+          {/* End-of-Life Recycling Service */}
+          <Card className="p-4 sm:p-6 lg:p-10 bg-gradient-card shadow-card hover:shadow-hero transition-all duration-300 border-l-4 border-secondary">
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="h-16 w-16 bg-secondary/10 rounded-lg flex items-center justify-center">
+                  <Recycle className="h-8 w-8 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold text-foreground">End-of-Life Recycling</h3>
+                  <p className="text-primary font-medium">Public Drop-off Network Operations</p>
+                </div>
+              </div>
+
+              <p className="text-muted-foreground text-lg">
+                Find the closest Communicycle bin to you and support your local collector and the environment by diverting all your electronic waste from reaching the landfill; Skip the landfill with Communicycle.
+              </p>
+
+              <div className="space-y-4">
+                <h4 className="font-semibold text-foreground flex items-center">
+                  <Building className="h-5 w-5 text-primary mr-2" />
+                  Solutions
+                </h4>
+                <ul className="space-y-2 text-sm text-muted-foreground ml-7">
+                  <li>• Convenient neighborhood locations</li>
+                  <li>• No appointment necessary</li>
+                  <li>• All electronics accepted</li>
+                  <li>• Certified destruction processes</li>
+                </ul>
+
+                <h4 className="font-semibold text-foreground flex items-center">
+                  <Users className="h-5 w-5 text-primary mr-2" />
+                  Device Management
+                </h4>
+                <ul className="space-y-2 text-sm text-muted-foreground ml-7">
+                  <li>• 100% landfill diversion</li>
+                  <li>• Responsible material recovery</li>
+                  <li>• Certified data destruction</li>
+                  <li>• Environmental compliance</li>
+                </ul>
+              </div>
+
+              <Button 
+                variant="eco" 
+                className="w-full group"
+                onClick={() => {
+                  navigate('/dropoff-locations');
+                  setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+                }}
+              >
+                Find Drop-off Location
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+          </Card>
         </div>
 
         {/* Accepted Devices */}
