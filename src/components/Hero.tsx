@@ -1,21 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { DollarSign, Shield, Recycle, Users, MapPin, Award, Leaf } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 export function Hero() {
   const navigate = useNavigate();
-
-  return (
-    <section className="relative min-h-[90vh] sm:min-h-[55vh] lg:min-h-[65vh] flex items-center overflow-hidden">
+  return <section className="relative min-h-[90vh] sm:min-h-[55vh] lg:min-h-[65vh] flex items-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('/lovable-uploads/81c17b36-34f9-4958-ba7e-4cbcfaecefd5.png')`,
-        }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url('/lovable-uploads/81c17b36-34f9-4958-ba7e-4cbcfaecefd5.png')`
+    }}>
         <div className="absolute inset-0 bg-black/80"></div>
       </div>
       <div className="container mx-auto px-4 md:px-5 py-2 md:py-7 lg:py-10 relative z-10">
@@ -28,17 +21,12 @@ export function Hero() {
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
               <p className="text-xl md:text-3xl text-white font-semibold md:font-medium leading-tight mt-4 md:mt-0 drop-shadow-lg">
-                <span className="hidden md:inline">Get Paid Big for Your Electronics - </span>Get Paid Big for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
+                Get Paid <span className="text-3xl md:text-5xl">BIG</span> for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less, or We Pay You $100.
               </p>
 
               <div className="mb-4">
-                <Button 
-                  variant="hero" 
-                  size="xl" 
-                  className="text-2xl"
-                  onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')}
-                >
-                  <DollarSign className="mr-2 h-5 w-5" />
+                <Button variant="hero" size="xl" onClick={() => window.open('https://tally.so/r/w40aVO', '_blank')} className="text-2xl lg:h-16 lg:px-16 lg:text-4xl">
+                  <DollarSign className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
                   Get Paid Big Now
                 </Button>
               </div>
@@ -48,15 +36,14 @@ export function Hero() {
               </p>
 
               <div className="mb-4">
-                <Button 
-                  variant="hero" 
-                  size="xl" 
-                  onClick={() => {
-                    navigate('/dropoff-locations');
-                    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
-                  }}
-                >
-                  <Recycle className="mr-2 h-5 w-5" />
+                <Button variant="hero" size="xl" onClick={() => {
+                navigate('/dropoff-locations');
+                setTimeout(() => window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+                }), 100);
+              }} className="text-2xl lg:h-16 lg:px-16 lg:text-4xl">
+                  <Recycle className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
                   Find Drop-off Location
                 </Button>
               </div>
@@ -131,6 +118,5 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
