@@ -34,7 +34,7 @@ export function Services() {
                   <DollarSign className="h-8 w-8 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-foreground">ITAD Asset Recovery: Maximum Payout for Electronics</h3>
+                  <h3 className="text-3xl font-bold text-foreground">Get Paid BIG: Maximum Payout for Electronics</h3>
                   <p className="text-primary font-medium">IT Asset Disposition & Refurbishment</p>
                 </div>
               </div>
