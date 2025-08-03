@@ -9,7 +9,7 @@ export function HowItWorks() {
   const itadSteps = [
     {
       icon: FileText,
-      title: "Get Paid Big Form",
+      title: "ITAD Intake Form",
       description: "Fill our form so we can ensure the best process and evaluation for your device to maximize value."
     },
     {
@@ -87,7 +87,7 @@ export function HowItWorks() {
                       <p className="text-sm text-muted-foreground">
                         {step.description}
                       </p>
-                      {step.title === "Get Paid Big Form" && (
+                      {step.title === "ITAD Intake Form" && (
                         <Button 
                           variant="outline" 
                           size="sm" 
@@ -170,7 +170,7 @@ export function HowItWorks() {
           <div className="bg-accent/40 rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Get Started?</h3>
             <p className="text-muted-foreground mb-6">
-              Whether you need to get paid BIG or end-of-life recycling, we have the expertise and infrastructure to handle your electronics responsibly.
+              Whether you need asset recovery or end-of-life recycling, we have the expertise and infrastructure to handle your electronics responsibly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 

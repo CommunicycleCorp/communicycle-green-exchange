@@ -9,7 +9,7 @@ export function Services() {
   const mainServices = [
     {
       icon: DollarSign,
-      title: "Get Paid Big: Maximum Payout for Electronics",
+      title: "ITAD Asset Recovery: Maximum Payout for Electronics",
       subtitle: "IT Asset Disposition & Refurbishment",
       description: "We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.",
       businessFeatures: ["Corporate equipment liquidation", "Data center decommissioning", "Office technology upgrades", "Fleet device management"],
@@ -65,7 +65,7 @@ export function Services() {
                 </div>
 
                 <p className="text-muted-foreground text-lg">
-                  {index === 0 ? "We guarantee the highest payout due to our model." : "Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills."}
+                  Recycle your end-of-life electronics responsibly and help protect the environment by keeping e-waste out of landfills.
                 </p>
 
                 <div className="space-y-4">
