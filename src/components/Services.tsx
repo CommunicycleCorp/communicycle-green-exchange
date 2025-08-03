@@ -40,7 +40,7 @@ export function Services() {
               </div>
 
               <p className="text-muted-foreground text-lg">
-                We refurbish and increase the value of your electronics. Whether you're a household or a business, we maximize the value of your working electronics from our refurbishing process then our specialized team will resell them and return most of the profits to you — with zero effort and maximum payout.
+                Get paid BIG for electronics, the best way to get paid fairly and securely. Get Paid What You Deserve.
               </p>
 
               <div className="space-y-4">
