@@ -65,7 +65,7 @@ export function HowItWorks() {
         {/* ITAD Process */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold text-foreground mb-2">ITAD Asset Recovery Process</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-2">Get Paid BIG Process</h3>
             <p className="text-muted-foreground">For working IT equipment with resale value</p>
           </div>
           
