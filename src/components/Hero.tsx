@@ -14,7 +14,7 @@ export function Hero() {
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url('/lovable-uploads/58b3b588-6189-4318-996c-0d0e29ca20bc.png')`,
-          backgroundPosition: 'center 192px',
+          backgroundPosition: 'center -192px',
         }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
