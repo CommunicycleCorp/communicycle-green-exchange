@@ -28,7 +28,7 @@ export function Hero() {
                 <span className="block text-primary">Lifecycle Management</span>
               </h1>
               <p className="text-xl md:text-3xl text-white font-semibold md:font-medium leading-tight mt-4 md:mt-0 drop-shadow-lg">
-                <span className="hidden md:inline">Get Paid <span className="text-4xl md:text-5xl font-bold">BIG</span> for Your Electronics - </span><span className="md:hidden">Get Paid Big for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less.</span><span className="hidden md:inline">Get Paid Big for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less.</span>
+                <span className="hidden md:inline">Get Paid <span className="text-4xl md:text-5xl font-bold">BIG</span> for Your Electronics - </span><span className="md:hidden">Get Paid <span className="text-3xl font-bold">BIG</span> for Your Laptop, Computer, or Phone</span><span className="hidden md:inline">Get Paid Big for Your Laptop, Computer, or Phone — Fast, Secure, and Guaranteed in 14 Days or Less.</span>
               </p>
 
               <div className="mb-4">
