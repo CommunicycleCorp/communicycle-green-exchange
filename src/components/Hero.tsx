@@ -8,7 +8,7 @@ export function Hero() {
         style={{
           backgroundImage: `url('/lovable-uploads/58b3b588-6189-4318-996c-0d0e29ca20bc.png')`,
           backgroundSize: '1400px 800px',
-          backgroundPosition: 'center top',
+          backgroundPosition: 'center bottom',
         }}
       ></div>
       {/* Empty content area with preserved sizing */}
