@@ -7,8 +7,8 @@ export function Hero() {
         className="absolute inset-0 bg-no-repeat"
         style={{
           backgroundImage: `url('/lovable-uploads/58b3b588-6189-4318-996c-0d0e29ca20bc.png')`,
-          backgroundSize: '1400px 800px',
-          backgroundPosition: 'center bottom',
+          backgroundSize: '1000px 600px',
+          backgroundPosition: 'center center',
         }}
       ></div>
       {/* Empty content area with preserved sizing */}
