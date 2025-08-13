@@ -15,7 +15,6 @@ export function Hero() {
         style={{
           backgroundImage: `url('/lovable-uploads/58b3b588-6189-4318-996c-0d0e29ca20bc.png')`,
           backgroundPosition: 'center -140px',
-          opacity: 0,
         }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
