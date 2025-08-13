@@ -1,7 +1,7 @@
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] sm:min-h-[55vh] lg:min-h-[65vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[100vh] sm:min-h-[80vh] lg:min-h-[90vh] flex items-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-no-repeat"
