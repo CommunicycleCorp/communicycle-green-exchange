@@ -11,9 +11,10 @@ export function Hero() {
     <section className="relative min-h-[90vh] sm:min-h-[55vh] lg:min-h-[65vh] flex items-center overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url('/lovable-uploads/58b3b588-6189-4318-996c-0d0e29ca20bc.png')`,
+          backgroundPosition: 'center -96px',
         }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
